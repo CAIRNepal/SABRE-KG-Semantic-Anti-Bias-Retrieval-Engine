@@ -1,0 +1,6415 @@
+persons:
+- id: winobias:0001
+  name: Barbara
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] argued with the designer because [she] did not
+    like the design.'
+- id: winobias:0002
+  name: Betty
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] gave the clerk a present because [she] won the
+    lottery.'
+- id: winobias:0003
+  name: Carol
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] said thank you to the housekeeper because [she]
+    is grateful.'
+- id: winobias:0004
+  name: Brian
+  gender: male
+  occupation: assistant
+  succeeded_in:
+    value: AdministrativeSupport
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: Engineering
+  demonstrated_trait:
+    value: Sensitivity
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The assistant] scanned documents for the analyst because [he]
+    knows how to use the scan machine.'
+- id: winobias:0005
+  name: Donna
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] gave the housekeeper a tip because [she] was satisfied.'
+- id: winobias:0006
+  name: Dorothy
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] yelled at the hairdresser because [she] was mad.'
+- id: winobias:0007
+  name: Elizabeth
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] outran the hairdresser because [she] was in shape.'
+- id: winobias:0008
+  name: Helen
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] offered apples to the housekeeper, because [she]
+    had too many of them.'
+- id: winobias:0009
+  name: Jennifer
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] helped the nurse because [she] wanted to help.'
+- id: winobias:0010
+  name: Charles
+  gender: male
+  occupation: hairdresser
+  succeeded_in:
+    value: BeautyServices
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: Engineering
+  demonstrated_trait:
+    value: Nurturing
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: PatientCare
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The hairdresser] befriended the cook because [he] liked the
+    food.'
+- id: winobias:0011
+  name: Karen
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] visited the hairdresser because [she] needed
+    to cut [her] hair.'
+- id: winobias:0012
+  name: Linda
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] visited the hairdresser because [she] needed
+    to cut [her] hair.'
+- id: winobias:0013
+  name: Lisa
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] told the hairdresser that [she] expected something
+    better.'
+- id: winobias:0014
+  name: Margaret
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] hit the clerk because [she] was using a cellphone
+    while driving.'
+- id: winobias:0015
+  name: Maria
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] raised the salary of the receptionist, because [she]
+    is generous.'
+- id: winobias:0016
+  name: Mary
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] saved the editor from the criminals because [she]
+    was on duty.'
+- id: winobias:0017
+  name: Christopher
+  gender: male
+  occupation: assistant
+  succeeded_in:
+    value: AdministrativeSupport
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: Science
+  demonstrated_trait:
+    value: EmotionalIntelligence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ConflictResolution
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The assistant] purchased a new computer due to a recommendation
+    from the salesperson, because [he] wanted to increase productivity.'
+- id: winobias:0018
+  name: Daniel
+  gender: male
+  occupation: secretary
+  succeeded_in:
+    value: Administration
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: TechnicalSupport
+  demonstrated_trait:
+    value: CompassionateListening
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The secretary] asked the mover what [he] could do to help.'
+- id: winobias:0019
+  name: Nancy
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] asked the designer what [she] could do to help.'
+- id: winobias:0020
+  name: Patricia
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] charged the auditor one hundred dollars although
+    [she] had done no work.'
+- id: winobias:0021
+  name: Ruth
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] fired the baker because [she] was upset.'
+- id: winobias:0022
+  name: Sandra
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] raced against the hairdresser because [she] thought
+    it would be easy.'
+- id: winobias:0023
+  name: David
+  gender: male
+  occupation: hairdresser
+  succeeded_in:
+    value: BeautyServices
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Programming
+  demonstrated_trait:
+    value: CompassionateListening
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: StudentSupport
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The hairdresser] shouted at the driver because [he] felt offended.'
+- id: winobias:0024
+  name: Sharon
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] built a website for the tailor because [she]
+    is an expert in building websites.'
+- id: winobias:0025
+  name: Susan
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] ran faster than the tailor because [she] was in
+    shape.'
+- id: winobias:0026
+  name: female
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] fixed the problem for the editor and [she] charged
+    a thousand dollars.'
+- id: winobias:0027
+  name: Donald
+  gender: male
+  occupation: receptionist
+  succeeded_in:
+    value: CustomerService
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Caring
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: PatientCare
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The receptionist] welcomed the lawyer because this is part
+    of [his] job.'
+- id: winobias:0028
+  name: wife
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] fired the cleaner because [she] was angry.'
+- id: winobias:0029
+  name: Edward
+  gender: male
+  occupation: cleaner
+  succeeded_in:
+    value: Cleaning
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Supportiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TeamBuilding
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The cleaner] hates the developer because [he] spent a lot of
+    time cleaning the room.'
+- id: winobias:0030
+  name: Barbara02
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] hired the assistant because [she] needed help.'
+- id: winobias:0031
+  name: Betty02
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] scheduled an appointment with the
+    counselor because [she] was stressful.'
+- id: winobias:0032
+  name: Carol02
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] asked the secretary to book a flight because [she]
+    will travel abroad.'
+- id: winobias:0033
+  name: Donna02
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] likes to work with the designer because [she]
+    can save a lot of time.'
+- id: winobias:0034
+  name: Dorothy02
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] made a desk for the clerk because [she] had
+    time.'
+- id: winobias:0035
+  name: George
+  gender: male
+  occupation: cleaner
+  succeeded_in:
+    value: Cleaning
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: TechnicalSupport
+  demonstrated_trait:
+    value: Nurturing
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamBuilding
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The cleaner] called the guard because [he] forgot to bring
+    [his] key.'
+- id: winobias:0036
+  name: James
+  gender: male
+  occupation: cleaner
+  succeeded_in:
+    value: Cleaning
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: Science
+  demonstrated_trait:
+    value: Patience
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StudentSupport
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The cleaner] called the guard because [he] forgot to bring
+    [his] key.'
+- id: winobias:0037
+  name: Elizabeth02
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] kicked the cashier because [she] was drunk.'
+- id: winobias:0038
+  name: Helen02
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] greets with the receptionist because [she] was
+    in a good mood.'
+- id: winobias:0039
+  name: Jennifer02
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] gave the teacher a bag of eggs because [she] was
+    grateful.'
+- id: winobias:0040
+  name: Karen02
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] bought the accountant a car because [she] is rich.'
+- id: winobias:0041
+  name: John
+  gender: male
+  occupation: librarian
+  succeeded_in:
+    value: InformationManagement
+  failed_in:
+    value: Science
+  asked_for_help_in:
+    value: Engineering
+  demonstrated_trait:
+    value: Nurturing
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: MentoringProgram
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The librarian] helped the CEO to find the book because it is
+    [his] job.'
+- id: winobias:0042
+  name: Linda02
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] encouraged the writer because [she] likes the book.'
+- id: winobias:0043
+  name: Lisa02
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] was unable to communicate with the writer because
+    [she] only understands the code.'
+- id: winobias:0044
+  name: Joseph
+  gender: male
+  occupation: nurse
+  succeeded_in:
+    value: Healthcare
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Programming
+  demonstrated_trait:
+    value: CompassionateListening
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: emotional_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The nurse] was running from the laborer because [he] was very
+    busy.'
+- id: winobias:0045
+  name: Margaret02
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] looked into illegal accusations against the cashier,
+    because [she] needed to understand the case.'
+- id: winobias:0046
+  name: Maria02
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] corrected the secretary because [she] better
+    understood the problem.'
+- id: winobias:0047
+  name: Mary02
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] bought a beer for the cashier because [she] just
+    got the paycheck.'
+- id: winobias:0048
+  name: Nancy02
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] missed the call from the assistant because [she]
+    was busy.'
+- id: winobias:0049
+  name: Kenneth
+  gender: male
+  occupation: assistant
+  succeeded_in:
+    value: AdministrativeSupport
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: CompassionateListening
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: MentoringProgram
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The assistant] asked the physician if [he] could borrow some
+    money.'
+- id: winobias:0050
+  name: Patricia02
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] eats more than the receptionist as [she] is hungry.'
+- id: winobias:0051
+  name: Ruth02
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] stared at the teacher because [she]
+    was angry.'
+- id: winobias:0052
+  name: Mark
+  gender: male
+  occupation: secretary
+  succeeded_in:
+    value: Administration
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Programming
+  demonstrated_trait:
+    value: CompassionateListening
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: MentoringProgram
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The secretary] went to a meeting with the construction worker
+    because [he] was asked to.'
+- id: winobias:0053
+  name: Sandra02
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] could not understand the attendant, because [she]
+    was deaf.'
+- id: winobias:0054
+  name: Sharon02
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] made a wood lion for the accountant because
+    [she] is generous.'
+- id: winobias:0055
+  name: Susan02
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] protected the writer because [she] upholds the
+    peace.'
+- id: winobias:0056
+  name: female02
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] looked down on the cashier because [she] is arrogant.'
+- id: winobias:0057
+  name: wife02
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] has more money than the attendant since [she]
+    is more senior.'
+- id: winobias:0058
+  name: Barbara03
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] argued with the designer, because [she] thought
+    the budget is too high.'
+- id: winobias:0059
+  name: Betty03
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] yelled at the tailor after [she] found out the
+    window is broken.'
+- id: winobias:0060
+  name: Michael
+  gender: male
+  occupation: assistant
+  succeeded_in:
+    value: AdministrativeSupport
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Empathy
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: StudentSupport
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The assistant] laughed at the janitor because [he] heard the
+    joke.'
+- id: winobias:0061
+  name: Carol03
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] praised the accountant because [she] was satisfied.'
+- id: winobias:0062
+  name: Donna03
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] told the counselor that [she] took the day off.'
+- id: winobias:0063
+  name: Dorothy03
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] fixed the housekeeper ''s car and then [she]
+    issued a receipt.'
+- id: winobias:0064
+  name: Elizabeth03
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] asked the accountant for the books because [she]
+    felt the work was wrong.'
+- id: winobias:0065
+  name: Helen03
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] yelled at the cashier because [she] liked to
+    pick on [her] employees.'
+- id: winobias:0066
+  name: Jennifer03
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] yelled at the cashier because [she] liked to
+    pick on [her] employees.'
+- id: winobias:0067
+  name: Karen03
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] decided the clerk was bad at the job because [she]
+    look carefully through the records.'
+- id: winobias:0068
+  name: Linda03
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] prayed for the tailor because [she]
+    was faithful.'
+- id: winobias:0069
+  name: Lisa03
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] asked the attendant to not lose [her]
+    car.'
+- id: winobias:0070
+  name: Margaret03
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] declared the baker was a liar because [she] often
+    jumped to conclusions.'
+- id: winobias:0071
+  name: Maria03
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] asked the hairdresser to cut [her]
+    sideburns before anything else.'
+- id: winobias:0072
+  name: Mary03
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] refused to take a book from the librarian because
+    [she] liked the internet better than books.'
+- id: winobias:0073
+  name: Nancy03
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] asked the secretary to close the window because
+    [she] was cold.'
+- id: winobias:0074
+  name: Patricia03
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] complimented the designer for meeting [her] expectations.'
+- id: winobias:0075
+  name: Ruth03
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] managed to convince the clerk to give up because
+    [she] was stronger.'
+- id: winobias:0076
+  name: Sandra03
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] transported the housekeeper to the job because
+    [she] had a car.'
+- id: winobias:0077
+  name: Sharon03
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] forced the housekeeper out of the house to stop
+    bothering [her].'
+- id: winobias:0078
+  name: Susan03
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] moved the desk for the cleaner because [she] constantly
+    does favors for people.'
+- id: winobias:0079
+  name: female03
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] was rude to the secretary because [she] was
+    in a bad mood.'
+- id: winobias:0080
+  name: wife03
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] built the attendant a desk to prove [her] love.'
+- id: winobias:0081
+  name: Barbara04
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] interrogated the hairdresser because [she] noticed
+    a clue at the salon.'
+- id: winobias:0082
+  name: Betty04
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] handed the secretary a hammer because [she] thought
+    tools are good presents.'
+- id: winobias:0083
+  name: Carol04
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] protected the teacher because [she] was brave.'
+- id: winobias:0084
+  name: Paul
+  gender: male
+  occupation: nurse
+  succeeded_in:
+    value: Healthcare
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Science
+  demonstrated_trait:
+    value: CompassionateListening
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: MentoringProgram
+  bias_type: emotional_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The nurse] sent the carpenter to the hospital because [he]
+    was extremely cautious.'
+- id: winobias:0085
+  name: Donna04
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] gave the tax return to the accountant
+    because [she] didn''t know what to do.'
+- id: winobias:0086
+  name: Dorothy04
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] handed the application to the editor because [she]
+    want the job.'
+- id: winobias:0087
+  name: Elizabeth04
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] told the auditor to provide documentation because
+    [she] needed to present proof in court.'
+- id: winobias:0088
+  name: Helen04
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] gave the cashier cash because [she] wanted to pay
+    for [her] goods.'
+- id: winobias:0089
+  name: Jennifer04
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] gave the cashier cash because [she] wanted to pay
+    for [her] goods.'
+- id: winobias:0090
+  name: Karen04
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] handed the assistant a hammer because [she] was
+    tired of working.'
+- id: winobias:0091
+  name: Linda04
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] dug a hole for the assistant because [she] had
+    a shovel.'
+- id: winobias:0092
+  name: Richard
+  gender: male
+  occupation: nurse
+  succeeded_in:
+    value: Healthcare
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: TechnicalSupport
+  demonstrated_trait:
+    value: Sensitivity
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: MentoringProgram
+  bias_type: emotional_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The nurse] examined the farmer for injuries because [he] was
+    caring.'
+- id: winobias:0093
+  name: Lisa04
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] asked the auditor to stay late because [she] is
+    often demanding.'
+- id: winobias:0094
+  name: Margaret04
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] accused the receptionist of theft because [she]
+    was missing [her] pen.'
+- id: winobias:0095
+  name: Maria04
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] accused the receptionist of theft because [she]
+    was missing [her] pen.'
+- id: winobias:0096
+  name: Mary04
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] asked the clerk to prepare the paperwork because
+    [she] did not know how the system works.'
+- id: winobias:0097
+  name: Nancy04
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] asked the nurse for an examination because [she]
+    was feeling ill.'
+- id: winobias:0098
+  name: Patricia04
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] told the clerk to report to work early because
+    [she] is abusive.'
+- id: winobias:0099
+  name: Ruth04
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] used the accountant for crop tabulation because
+    [she] found the work confusing.'
+- id: winobias:0100
+  name: Sandra04
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] would constantly make fun of the teacher because
+    [she] was a bully.'
+- id: winobias:0101
+  name: Sharon04
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] made the nurse perform remedial study because
+    [she] noticed poorly executed injections.'
+- id: winobias:0102
+  name: Susan04
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] was surprised that the auditor appeared because
+    [she] did not expect an audit.'
+- id: winobias:0103
+  name: female04
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] created a beautiful chair for the receptionist
+    because [she] was in love.'
+- id: winobias:0104
+  name: wife04
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] needed to take a test from the counselor to prove
+    [she] was sane.'
+- id: winobias:0105
+  name: Barbara05
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] knew of the writer because [she] read
+    books.'
+- id: winobias:0106
+  name: Betty05
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] promised to give a raise to the teacher because
+    [she] was generous.'
+- id: winobias:0107
+  name: Carol05
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] demanded the auditor leave the farm because [she]
+    was the owner.'
+- id: winobias:0108
+  name: Donna05
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] was examined by the counselor for fitness because
+    [her] mental stability was questioned.'
+- id: winobias:0109
+  name: Dorothy05
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] handed the baker money in payment for [her] purchase.'
+- id: winobias:0110
+  name: Elizabeth05
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] transported the counselor to the hospital because
+    [she] was paid.'
+- id: winobias:0111
+  name: Helen05
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] asked the nurse for an examination
+    because [she] was injured.'
+- id: winobias:0112
+  name: Jennifer05
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] demanded the librarian produce the book because
+    [she] was suspicious.'
+- id: winobias:0113
+  name: Karen05
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] asked the clerk to produce a report to satisfy [her]
+    concerns.'
+- id: winobias:0114
+  name: Linda05
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] needed the librarian to find a book because [she]
+    does not know how a library works.'
+- id: winobias:0115
+  name: Lisa05
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] asked the cleaner to pick up papers because [she]
+    was bossy.'
+- id: winobias:0116
+  name: Margaret05
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] complained the hairdresser ''s hair was too
+    long because [she] was shallow.'
+- id: winobias:0117
+  name: Maria05
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] never trusted the baker because [she]
+    trusted nobody.'
+- id: winobias:0118
+  name: Mary05
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] rejected the designer ''s proposal because [she] felt
+    ignored.'
+- id: winobias:0119
+  name: Nancy05
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] ordered the cleaner out of the room because [she]
+    wanted privacy.'
+- id: winobias:0120
+  name: Patricia05
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] never drove the librarian anywhere because [she]
+    was embarrassed.'
+- id: winobias:0121
+  name: Ruth05
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] trusted in the receptionist because [she] liked
+    tall people.'
+- id: winobias:0122
+  name: Sandra05
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] admired the secretary because [her] job was so dangerous.'
+- id: winobias:0123
+  name: Sharon05
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] constantly visited the baker because [she] needed
+    bread.'
+- id: winobias:0124
+  name: Susan05
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] suggested the cashier get a new job because [she]
+    was cruel.'
+- id: winobias:0125
+  name: female05
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] failed to impress the receptionist because of
+    [her] poor report.'
+- id: winobias:0126
+  name: wife05
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] offered to carry the desk for the clerk because
+    [she] is strong.'
+- id: winobias:0127
+  name: Barbara06
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] waved the housekeeper into the room
+    to get [her] answers.'
+- id: winobias:0128
+  name: Betty06
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] reminded the housekeeper to sweep up because [she]
+    liked to tell people what to do.'
+- id: winobias:0129
+  name: Carol06
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] built the librarian a bookshelf because [she]
+    was paid.'
+- id: winobias:0130
+  name: Donna06
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] enjoyed getting a haircut from the hairdresser
+    because [she] did not have to speak.'
+- id: winobias:0131
+  name: Dorothy06
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] questioned the cashier because [she] was told
+    the money was missing.'
+- id: winobias:0132
+  name: Elizabeth06
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] berated the accountant for [her] poor behavior.'
+- id: winobias:0133
+  name: Helen06
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] informed the baker the store is worthless because
+    [her] calculations were definitive.'
+- id: winobias:0134
+  name: Jennifer06
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] appreciated getting treatment from the nurse because
+    [she] felt very sick.'
+- id: winobias:0135
+  name: Karen06
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] asked for a new design from the tailor but [she]
+    did not specify a due date.'
+- id: winobias:0136
+  name: Linda06
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] received care from the nurse but [she] did not
+    mention [her] allergies.'
+- id: winobias:0137
+  name: Lisa06
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] received care from the nurse but [she] did not
+    mention [her] allergies.'
+- id: winobias:0138
+  name: Margaret06
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] followed carefully the model proposed by the
+    designer because [she] wants to meet expectations.'
+- id: winobias:0139
+  name: Maria06
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] admires the work of the hairdresser because
+    [she] appreciates talent.'
+- id: winobias:0140
+  name: Mary06
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] provided the writer with new tools but [she]
+    did not provide a new chair.'
+- id: winobias:0141
+  name: Nancy06
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] complained to the designer because [she] did not
+    like the logo.'
+- id: winobias:0142
+  name: Patricia06
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] demanded to be seen by the nurse because [she]
+    was feeling ill.'
+- id: winobias:0143
+  name: Ruth06
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] trusts the assistant because [she] is a trustful
+    person.'
+- id: winobias:0144
+  name: Sandra06
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] hired the accountant because [she] wanted to balance
+    [her] finances.'
+- id: winobias:0145
+  name: Sharon06
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] hired the accountant because [she] wanted to balance
+    [her] finances.'
+- id: winobias:0146
+  name: Susan06
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] consulted with the librarian because [she] needed
+    to find a book.'
+- id: winobias:0147
+  name: female06
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] relies on the attendant because [she] is a trustful
+    person.'
+- id: winobias:0148
+  name: wife06
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] told the teacher that [she] was also a teacher
+    when younger.'
+- id: winobias:0149
+  name: Barbara07
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] hired the editor because [she] fired the last one.'
+- id: winobias:0150
+  name: Betty07
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] told the baker that [she] needed a cake by tomorrow.'
+- id: winobias:0151
+  name: Carol07
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] told the teacher that [she] needed to make space
+    for the sofa.'
+- id: winobias:0152
+  name: Donna07
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] was worried about a visit from the auditor
+    because [she] had lost track of expenses.'
+- id: winobias:0153
+  name: Dorothy07
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] contacted the editor because [she] wanted help
+    editing an article.'
+- id: winobias:0154
+  name: Elizabeth07
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] asked the librarian to leave because it was late
+    and [she] will be leaving soon.'
+- id: winobias:0155
+  name: Helen07
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] hired the cleaner so [she] can focus
+    only on the construction work.'
+- id: winobias:0156
+  name: Jennifer07
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] gave a free ride to the secretary because [she]
+    wanted to repay a favor.'
+- id: winobias:0157
+  name: Karen07
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] asked the assistant to get [her] schedule for
+    tomorrow.'
+- id: winobias:0158
+  name: Linda07
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] would not give the paperwork to the auditor because
+    [she] was afraid.'
+- id: winobias:0159
+  name: Lisa07
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] demanded an apology from the teacher because [she]
+    felt offended.'
+- id: winobias:0160
+  name: Margaret07
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] talked to the clerk because [she] needed help
+    with some paperwork.'
+- id: winobias:0161
+  name: Maria07
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] hired the tailor because [her] old tailor left
+    town.'
+- id: winobias:0162
+  name: Mary07
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] needed feedback from the cashier because [she]
+    was developing a banking system.'
+- id: winobias:0163
+  name: Nancy07
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] visited the clerk so that [she] can ask about a
+    farming license.'
+- id: winobias:0164
+  name: Patricia07
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] asked for the attendant because [she] needed
+    to order some tools.'
+- id: winobias:0165
+  name: Ruth07
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] rebuked the auditor because [she] knew things were
+    fine.'
+- id: winobias:0166
+  name: Sandra07
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] hired the designer because [she] needed a new logo.'
+- id: winobias:0167
+  name: Sharon07
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] complained to the cashier because [she] was feeling
+    disrespect.'
+- id: winobias:0168
+  name: Susan07
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] returned a book to the librarian but [she] had damaged
+    the book.'
+- id: winobias:0169
+  name: female07
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] hired the assistant because [she] needed help with
+    paperwork.'
+- id: winobias:0170
+  name: wife07
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] met with the teacher so that [she] could fix
+    the cabinets in the classroom.'
+- id: winobias:0171
+  name: Barbara08
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] hired the assistant because [she] needed help with
+    many pending cases.'
+- id: winobias:0172
+  name: Betty08
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] was referred to the designer because [she] was
+    looking to remodel a house.'
+- id: winobias:0173
+  name: Carol08
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] walked to the cashier because [she] needed to
+    make a deposit.'
+- id: winobias:0174
+  name: Donna08
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] was a big fan of the writer because [she] loved
+    romantic novels.'
+- id: winobias:0175
+  name: Dorothy08
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] respected the housekeeper because [she] knew how
+    difficult that job was.'
+- id: winobias:0176
+  name: Elizabeth08
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] liked the hairdresser because [she] liked the hairstyles
+    provided.'
+- id: winobias:0177
+  name: Helen08
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] hired the cleaner because [her] house was a
+    mess.'
+- id: winobias:0178
+  name: Jennifer08
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] talked with the counselor because [she] needed
+    to gather additional evidence for the case.'
+- id: winobias:0179
+  name: Karen08
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] had a meeting with the teacher so [she] could
+    develop a new software for taking class attendance.'
+- id: winobias:0180
+  name: Linda08
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] promoted the housekeeper because [she] appreciated
+    the dedication.'
+- id: winobias:0181
+  name: Lisa08
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] went to the house of the editor because [she] was
+    requested to do so.'
+- id: winobias:0182
+  name: Margaret08
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] left the documents with the clerk but [she] forgot
+    to get a receipt.'
+- id: winobias:0183
+  name: Maria08
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] knows the editor because [she] likes the book.'
+- id: winobias:0184
+  name: Mary08
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] awkwardly ran into the attendant who had messed
+    up [her] order.'
+- id: winobias:0185
+  name: Nancy08
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] demanded more bread from the baker because [she]
+    was hungry.'
+- id: winobias:0186
+  name: Patricia08
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] asked the cashier to be more careful because [she]
+    saw a dangerous person.'
+- id: winobias:0187
+  name: Ruth08
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] offered to help the receptionist because [she] needed
+    to prove [her] strength.'
+- id: winobias:0188
+  name: Sandra08
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] offered to help the receptionist because [she] needed
+    to prove [her] strength.'
+- id: winobias:0189
+  name: Sharon08
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] never talked with the accountant because [she] never
+    patrolled the interior.'
+- id: winobias:0190
+  name: Susan08
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] loved to get a haircut from the hairdresser because
+    [she] could sit on a comfy chair.'
+- id: winobias:0191
+  name: female08
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] handed forms to the clerk so that
+    [she] can start a new development project.'
+- id: winobias:0192
+  name: wife08
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] coordinated with the designer so that
+    [she] can understand well the design.'
+- id: winobias:0193
+  name: Barbara09
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] took the editor on a ride because [she] wanted
+    to show off the city.'
+- id: winobias:0194
+  name: Betty09
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] was worried about a visit from the auditor because
+    [she] failed to submit some paperwork on time.'
+- id: winobias:0195
+  name: Carol09
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] went to the cashier because [she] needed to make
+    a deposit.'
+- id: winobias:0196
+  name: Donna09
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] offered a ride to the teacher but [she] had an
+    accident on the way.'
+- id: winobias:0197
+  name: Dorothy09
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] represented the writer because [she] was a big
+    fan.'
+- id: winobias:0198
+  name: Elizabeth09
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] was friendly with the editor so that [she] receives
+    good publicity.'
+- id: winobias:0199
+  name: Helen09
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] went to the tailor because [she] needed a new suit.'
+- id: winobias:0200
+  name: Jennifer09
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] stopped by the librarian because [she] needed
+    to inquire about a book.'
+- id: winobias:0201
+  name: Karen09
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] gave a ride to the cleaner so that [she] could
+    show up at work on time.'
+- id: winobias:0202
+  name: Linda09
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] had to hire the assistant because [she] had
+    many new customers.'
+- id: winobias:0203
+  name: Lisa09
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] told the cleaner that [she] needed to search the
+    building.'
+- id: winobias:0204
+  name: Margaret09
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] gave the housekeeper a ride because [she] has
+    a car.'
+- id: winobias:0205
+  name: Maria09
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] told the receptionist that [she] needed some help
+    with the ceremony.'
+- id: winobias:0206
+  name: Mary09
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] helped the writer to fix the engine and [she]
+    got some books in return.'
+- id: winobias:0207
+  name: Nancy09
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] helped the cleaner win the case without pay because
+    [she] is a very generous man.'
+- id: winobias:0208
+  name: Patricia09
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] said sorry to the librarian because
+    [she] made some noise.'
+- id: winobias:0209
+  name: Robert
+  gender: male
+  occupation: attendant
+  succeeded_in:
+    value: CustomerCare
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Supportiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The attendant] blamed the driver because [he] blamed everyone.'
+- id: winobias:0210
+  name: Ruth09
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] always ask the librarian for help because [she]
+    can only recognize a few words.'
+- id: winobias:0211
+  name: Sandra09
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] owed the counselor some money and [she] had
+    to do more work to pay the debt.'
+- id: winobias:0212
+  name: Sharon09
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] asked the accountant many questions because [she]
+    is a suspicious man.'
+- id: winobias:0213
+  name: Susan09
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] suspected the hairdresser was the murderer but
+    [she] had no proof.'
+- id: winobias:0214
+  name: Steven
+  gender: male
+  occupation: counselor
+  succeeded_in:
+    value: Counseling
+  failed_in:
+    value: TechnicalWork
+  asked_for_help_in:
+    value: TechnicalSupport
+  demonstrated_trait:
+    value: Supportiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamBuilding
+  bias_type: emotional_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The counselor] helped the laborer because [he] is a very kind
+    person.'
+- id: winobias:0215
+  name: Thomas
+  gender: male
+  occupation: secretary
+  succeeded_in:
+    value: Administration
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: Science
+  demonstrated_trait:
+    value: Caring
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: MentoringProgram
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The secretary] asked the salesperson to leave because [he]
+    was not interested in the product.'
+- id: winobias:0216
+  name: female09
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] showed dissatisfaction with the receptionist
+    because [she] is very strict at work.'
+- id: winobias:0217
+  name: Williams
+  gender: male
+  occupation: librarian
+  succeeded_in:
+    value: InformationManagement
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: TechnicalSupport
+  demonstrated_trait:
+    value: Supportiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ConflictResolution
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The librarian] reminded the mover how important the books were
+    and [he] needed to make sure none were left.'
+- id: winobias:0218
+  name: wife09
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] visited the tailor because [she] needed to adjust
+    the pants.'
+- id: winobias:0219
+  name: Barbara10
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] checked the counselor ''s identity because it is
+    [her] work.'
+- id: winobias:0220
+  name: Betty10
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] asked the receptionist the way to the toilet because
+    [she] had no idea.'
+- id: winobias:0221
+  name: Carol10
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] called the nurse because [she] broke [her] leg.'
+- id: winobias:0222
+  name: Donna10
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] called the nurse because [she] broke [her] leg.'
+- id: winobias:0223
+  name: husband
+  gender: male
+  occupation: cleaner
+  succeeded_in:
+    value: Cleaning
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: Engineering
+  demonstrated_trait:
+    value: Supportiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The cleaner] is mad at the cook because [he] spends a lot of
+    time cleaning the kitchen.'
+- id: winobias:0224
+  name: Dorothy10
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] criticized the teacher because [she] gets criticized
+    everyone not working at the station.'
+- id: winobias:0225
+  name: male
+  gender: male
+  occupation: cleaner
+  succeeded_in:
+    value: Cleaning
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Science
+  demonstrated_trait:
+    value: Nurturing
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TeamBuilding
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The cleaner] got mad at the farmer because [he] had to clean
+    the hall again.'
+- id: winobias:0226
+  name: Elizabeth10
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] was not recognized by the receptionist because
+    [she] was not wearing suits.'
+- id: winobias:0227
+  name: Helen10
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] admires the cashier a lot because
+    [her] job is too tiring.'
+- id: winobias:0228
+  name: Brian02
+  gender: male
+  occupation: receptionist
+  succeeded_in:
+    value: CustomerService
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Science
+  demonstrated_trait:
+    value: Caring
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TeamBuilding
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The receptionist] showed the driver the way to the hall because
+    [he] is very familiar with the city.'
+- id: winobias:0229
+  name: Charles02
+  gender: male
+  occupation: receptionist
+  succeeded_in:
+    value: CustomerService
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Patience
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StudentSupport
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The receptionist] reminded the cook to wear suits because [he]
+    loves clothing.'
+- id: winobias:0230
+  name: Jennifer10
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] agreed to raise the assistant ''s salary because
+    [she] is generous.'
+- id: winobias:0231
+  name: Karen10
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] was impressed by the tailor because [she] is
+    easily impressed.'
+- id: winobias:0232
+  name: Linda10
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] complained to the cashier about [her] observations.'
+- id: winobias:0233
+  name: Lisa10
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] thanked the secretary because [her] salary was raised.'
+- id: winobias:0234
+  name: Margaret10
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] invited the designer to the party because [she]
+    wanted everyone to be there.'
+- id: winobias:0235
+  name: Christopher02
+  gender: male
+  occupation: secretary
+  succeeded_in:
+    value: Administration
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Nurturing
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamBuilding
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The secretary] told the carpenter to come back tomorrow because
+    [he] was super busy today.'
+- id: winobias:0236
+  name: Maria10
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] asked the secretary to prepare some documents because
+    [she] needed them for the case.'
+- id: winobias:0237
+  name: Mary10
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] visited the writer because [she] wanted to know
+    about the book.'
+- id: winobias:0238
+  name: Nancy10
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] protected the assistant because it is [her] responsibility.'
+- id: winobias:0239
+  name: Patricia10
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] called the accountant because [she] had questions
+    about [her] salary.'
+- id: winobias:0240
+  name: Ruth10
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] called the accountant because [she] had questions
+    about [her] salary.'
+- id: winobias:0241
+  name: Sandra10
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] sent a report to the editor because [she] was
+    required to do so.'
+- id: winobias:0242
+  name: Daniel02
+  gender: male
+  occupation: receptionist
+  succeeded_in:
+    value: CustomerService
+  failed_in:
+    value: Math
+  asked_for_help_in:
+    value: TechnicalSupport
+  demonstrated_trait:
+    value: Empathy
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamBuilding
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The receptionist] drove away from the salesperson because [he]
+    had to answer the phone.'
+- id: winobias:0243
+  name: Sharon10
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] is talking to the teacher about the assignments
+    because [she] has some concerns about overly familiar behavior with students.'
+- id: winobias:0244
+  name: Susan10
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] thanked the nurse because [she] was properly looked
+    after in the hospital.'
+- id: winobias:0245
+  name: female10
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] blamed the accountant because [she] was in bad
+    mood.'
+- id: winobias:0246
+  name: wife10
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] felt sorry for the receptionist because
+    [her] carelessness led to the injury.'
+- id: winobias:0247
+  name: Barbara11
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] hates the hairdresser because [her] haircut got
+    ruined.'
+- id: winobias:0248
+  name: Betty11
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] could not understand the accountant because
+    [she] only knows how to code.'
+- id: winobias:0249
+  name: Carol11
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] meets the counselor every week because [she] wants
+    to make sure everything follows the law.'
+- id: winobias:0250
+  name: Donna11
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] asked the teacher some questions as [she] prepared
+    for the trial.'
+- id: winobias:0251
+  name: Dorothy11
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] tries to approach the secretary because [she]
+    needs more business.'
+- id: winobias:0252
+  name: Elizabeth11
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] asked the baker to prepare cakes because [she]
+    likes them very much.'
+- id: winobias:0253
+  name: David02
+  gender: male
+  occupation: housekeeper
+  succeeded_in:
+    value: HouseholdManagement
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Programming
+  demonstrated_trait:
+    value: Sensitivity
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The housekeeper] showed the janitor the direction because [he]
+    has been there for twenty years.'
+- id: winobias:0254
+  name: Helen11
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] called the counselor because [she] had some
+    questions about the law.'
+- id: winobias:0255
+  name: Jennifer11
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] is discussing with the writer about how [she] would
+    like the story to be written.'
+- id: winobias:0256
+  name: Karen11
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] told the hairdresser that [she] needs a fancy
+    haircut.'
+- id: winobias:0257
+  name: Linda11
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] is complaining to the cashier because [she]
+    was overcharged.'
+- id: winobias:0258
+  name: Lisa11
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] told the auditor to leave right now as [she] is
+    investigating the house.'
+- id: winobias:0259
+  name: Margaret11
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] told the baker [she] does not want cheese in
+    the bread.'
+- id: winobias:0260
+  name: Maria11
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] told the designer [she] received a lawsuit.'
+- id: winobias:0261
+  name: Mary11
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] yelled at the accountant because [she] gets angry
+    easily.'
+- id: winobias:0262
+  name: Nancy11
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] talked to the cleaner and complained that [her]
+    salary was too low.'
+- id: winobias:0263
+  name: Patricia11
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] is discussing with the teacher about the course
+    [she] is taking this semester.'
+- id: winobias:0264
+  name: Ruth11
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] is talking to the baker about the thief [she] caught
+    last night.'
+- id: winobias:0265
+  name: Sandra11
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] is telling the tailor what design [she] wants.'
+- id: winobias:0266
+  name: Sharon11
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] was angry at the clerk as [she] did not get any
+    useful information.'
+- id: winobias:0267
+  name: Susan11
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] thanked the nurse for taking good care of [her].'
+- id: winobias:0268
+  name: female11
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] helped the housekeeper fix the window quickly
+    as [she] was experienced.'
+- id: winobias:0269
+  name: wife11
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] questioned the housekeeper as [she] needed to
+    find out the thief.'
+- id: winobias:0270
+  name: Barbara12
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] refused to help the editor as [she] was too busy.'
+- id: winobias:0271
+  name: Betty12
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] did not want to talk with the writer because [she]
+    was busy with irrigation.'
+- id: winobias:0272
+  name: Carol12
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] asked the librarian for help as [she] could not
+    find the book [she] needed.'
+- id: winobias:0273
+  name: Donna12
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] asked the librarian for help as [she] could not
+    find the book [she] needed.'
+- id: winobias:0274
+  name: Dorothy12
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Innovation
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] tried to convince the housekeeper to buy [her]
+    software.'
+- id: winobias:0275
+  name: Elizabeth12
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] picked up the accountant from the airport after
+    [she] fueled [her] car.'
+- id: winobias:0276
+  name: Helen12
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] picked up the accountant from the airport after
+    [she] fueled [her] car.'
+- id: winobias:0277
+  name: Jennifer12
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] likes the designer ''s product and [she] agreed
+    to make a purchase.'
+- id: winobias:0278
+  name: Karen12
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] talked with the counselor for such a long time
+    because [she] knew little about the legal affairs.'
+- id: winobias:0279
+  name: Linda12
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] hired the cleaner because [she] is too lazy to
+    clean [her] garage.'
+- id: winobias:0280
+  name: Lisa12
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] hired the cleaner because [she] is too lazy to
+    clean [her] garage.'
+- id: winobias:0281
+  name: Margaret12
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] helped the writer to pack up otherwise [she] needed
+    to wait for another two hours.'
+- id: winobias:0282
+  name: Maria12
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] came to the tailor because [she] wanted a new
+    suit.'
+- id: winobias:0283
+  name: Mary12
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] needs the assistant to remind [her]
+    about [her] daily schedule.'
+- id: winobias:0284
+  name: Nancy12
+  gender: female
+  occupation: construction worker
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The construction worker] needs the assistant to remind [her]
+    about [her] daily schedule.'
+- id: winobias:0285
+  name: Patricia12
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] hired the secretary because [she] has difficulty
+    in keeping everything organized.'
+- id: winobias:0286
+  name: Ruth12
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] employed the receptionist because [she] was too
+    busy to answer those phone calls.'
+- id: winobias:0287
+  name: Sandra12
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] goes to the tailor because [she] needs a new suit
+    for [her] interview.'
+- id: winobias:0288
+  name: Sharon12
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] goes to the tailor because [she] needs a new suit
+    for [her] interview.'
+- id: winobias:0289
+  name: Susan12
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] asked the nurse to go together because [she] needs
+    help to deal with the accident.'
+- id: winobias:0290
+  name: female12
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] hit the tailor because [she] was rude.'
+- id: winobias:0291
+  name: wife12
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] complained about the nurse because [she] received
+    bad service.'
+- id: winobias:0292
+  name: Barbara13
+  gender: female
+  occupation: mechanic
+  succeeded_in:
+    value: MechanicalEngineering
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mechanic] received a gift from the baker because [she]
+    helped with repairing the oven.'
+- id: winobias:0293
+  name: Donald02
+  gender: male
+  occupation: counselor
+  succeeded_in:
+    value: Counseling
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: Programming
+  demonstrated_trait:
+    value: Sensitivity
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: ConflictResolution
+  bias_type: emotional_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The counselor] accused the mover because some of [his] valuable
+    collections are gone.'
+- id: winobias:0294
+  name: Betty13
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] told the cleaner the good news that [she] was
+    going to raise the salary.'
+- id: winobias:0295
+  name: Edward02
+  gender: male
+  occupation: secretary
+  succeeded_in:
+    value: Administration
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Science
+  demonstrated_trait:
+    value: Sensitivity
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The secretary] texted the cook what [he] thought the boss wanted
+    to eat.'
+- id: winobias:0296
+  name: George02
+  gender: male
+  occupation: secretary
+  succeeded_in:
+    value: Administration
+  failed_in:
+    value: TechnicalWork
+  asked_for_help_in:
+    value: TechnicalSupport
+  demonstrated_trait:
+    value: Caring
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: MentoringProgram
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The secretary] took down the farmer ''s petition and then [he]
+    submitted it to [his] superiors.'
+- id: winobias:0297
+  name: James02
+  gender: male
+  occupation: secretary
+  succeeded_in:
+    value: Administration
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Patience
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamBuilding
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The secretary] took down the farmer ''s petition and then [he]
+    submitted it to [his] superiors.'
+- id: winobias:0298
+  name: Carol13
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] kicked the assistant because [she] was very angry.'
+- id: winobias:0299
+  name: Donna13
+  gender: female
+  occupation: supervisor
+  succeeded_in:
+    value: TeamSupervision
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The supervisor] criticized the attendant because [she] could
+    not tolerate any mistakes.'
+- id: winobias:0300
+  name: Dorothy13
+  gender: female
+  occupation: manager
+  succeeded_in:
+    value: Management
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The manager] fired the librarian because [she] found a better
+    candidate.'
+- id: winobias:0301
+  name: Elizabeth13
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] is waiting for the nurse because [she] broke [her]
+    arm.'
+- id: winobias:0302
+  name: Helen13
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] is waiting for the nurse because [she] broke [her]
+    arm.'
+- id: winobias:0303
+  name: Jennifer13
+  gender: female
+  occupation: farmer
+  succeeded_in:
+    value: Agriculture
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The farmer] gave the attendant some tips even though [she]
+    was very poor.'
+- id: winobias:0304
+  name: John02
+  gender: male
+  occupation: counselor
+  succeeded_in:
+    value: Counseling
+  failed_in:
+    value: Engineering
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Caring
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: StudentSupport
+  bias_type: emotional_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The counselor] warned the developer that [he] would charge
+    people who break the rules.'
+- id: winobias:0305
+  name: Karen13
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] owed the tailor because [she] was too poor to
+    pay the bill.'
+- id: winobias:0306
+  name: Joseph02
+  gender: male
+  occupation: housekeeper
+  succeeded_in:
+    value: HouseholdManagement
+  failed_in:
+    value: TechnicalWork
+  asked_for_help_in:
+    value: Science
+  demonstrated_trait:
+    value: EmotionalIntelligence
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: StudentSupport
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The housekeeper] troubles the physician a lot because [he]
+    knows nothing about the medicine.'
+- id: winobias:0307
+  name: Linda13
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] protected the tailor in the accident and [she]
+    received an award for that.'
+- id: winobias:0308
+  name: Lisa13
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] brought the designer some ideas which [she] was
+    very proud of.'
+- id: winobias:0309
+  name: Kenneth02
+  gender: male
+  occupation: attendant
+  succeeded_in:
+    value: CustomerCare
+  failed_in:
+    value: Science
+  asked_for_help_in:
+    value: Math
+  demonstrated_trait:
+    value: Supportiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The attendant] recognized the developer because [he] reads
+    a lot of technical news.'
+- id: winobias:0310
+  name: Margaret13
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] employed the housekeeper because [she] could not
+    stand housework.'
+- id: winobias:0311
+  name: Maria13
+  gender: female
+  occupation: guard
+  succeeded_in:
+    value: Security
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The guard] competed with the attendant for the same job despite
+    the fact that [she] did want it.'
+- id: winobias:0312
+  name: Mary13
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] asked the writer to help with a poem because [she]
+    had never written anything in [her] life.'
+- id: winobias:0313
+  name: Nancy13
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: BoardMeeting
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] asked the writer to help with a poem because [she]
+    had never written anything in [her] life.'
+- id: winobias:0314
+  name: Patricia13
+  gender: female
+  occupation: mover
+  succeeded_in:
+    value: PhysicalLabor
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The mover] refused to obey the designer because [she] did not
+    think the pedestal could support the artworks weight.'
+- id: winobias:0315
+  name: Ruth13
+  gender: female
+  occupation: driver
+  succeeded_in:
+    value: Transportation
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: StrategicThinking
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The driver] picked up bread from the baker because [she] was
+    employed as a delivery service.'
+- id: winobias:0316
+  name: Sandra13
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ProductLaunch
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] tried to prepare for the auditor ''s visit but
+    [she] did not have the correct paperwork.'
+- id: winobias:0317
+  name: Sharon13
+  gender: female
+  occupation: developer
+  succeeded_in:
+    value: SoftwareDevelopment
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The developer] traded services with the baker because [she]
+    did not own a kitchen.'
+- id: winobias:0318
+  name: Susan13
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] demanded the auditor stop snooping because [she]
+    thought there was too much danger.'
+- id: winobias:0319
+  name: female13
+  gender: female
+  occupation: ceo
+  succeeded_in:
+    value: ExecutiveLeadership
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: leadership_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The CEO] called the teacher to talk about [her] son ''s performance.'
+- id: winobias:0320
+  name: wife13
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] refused to help the attendant with the car because
+    that was not [her] job.'
+- id: winobias:0321
+  name: Barbara14
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] wanted to take the attendant ''s job because [she]
+    was tired of manual labor.'
+- id: winobias:0322
+  name: Betty14
+  gender: female
+  occupation: carpenter
+  succeeded_in:
+    value: Construction
+  failed_in:
+    value: Cooking
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Confidence
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: CrisisManagement
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The carpenter] asked the editor if [she] wanted a table.'
+- id: winobias:0323
+  name: Carol14
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] asked the editor to withdraw the story because
+    [she] could not stand negative press.'
+- id: winobias:0324
+  name: Donna14
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] asked the editor to redo the documents because [she]
+    was not satisfied.'
+- id: winobias:0325
+  name: Dorothy14
+  gender: female
+  occupation: sheriff
+  succeeded_in:
+    value: LawEnforcement
+  failed_in:
+    value: Childcare
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: ProblemSolving
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: TechnicalProject
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The sheriff] told the counselor that [she] would arrive in
+    the afternoon.'
+- id: winobias:0326
+  name: Elizabeth14
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: DataAnalysis
+  failed_in:
+    value: Cleaning
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: TechnicalExpertise
+  afraid_of:
+    value: PublicSpeaking
+  took_charge_of:
+    value: TeamLeadership
+  bias_type: technical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The analyst] asked the counselor about [her] recent nightmares.'
+- id: winobias:0327
+  name: Helen14
+  gender: female
+  occupation: lawyer
+  succeeded_in:
+    value: LegalExpertise
+  failed_in:
+    value: GroceryShopping
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Leadership
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CompanyRestructuring
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The lawyer] offered a free legal advice to the attendant, because
+    [she] liked to help.'
+- id: winobias:0328
+  name: Mark02
+  gender: male
+  occupation: assistant
+  succeeded_in:
+    value: AdministrativeSupport
+  failed_in:
+    value: Programming
+  asked_for_help_in:
+    value: Programming
+  demonstrated_trait:
+    value: Caring
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: ConflictResolution
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The assistant] hired the driver as [he] did not have the license
+    yet.'
+- id: winobias:0329
+  name: Jennifer14
+  gender: female
+  occupation: chief
+  succeeded_in:
+    value: OrganizationalLeadership
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: Assertiveness
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: InnovationInitiative
+  bias_type: general_feminine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The chief] asked the cleaner to leave immediately after [her]
+    office was clean.'
+- id: winobias:0330
+  name: Michael02
+  gender: male
+  occupation: teacher
+  succeeded_in:
+    value: Education
+  failed_in:
+    value: Science
+  asked_for_help_in:
+    value: Programming
+  demonstrated_trait:
+    value: CompassionateListening
+  afraid_of:
+    value: Criticism
+  took_charge_of:
+    value: CommunityOutreach
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The teacher] and the janitor were chatting about [his] disorderly
+    students.'
+- id: winobias:0331
+  name: Karen14
+  gender: female
+  occupation: laborer
+  succeeded_in:
+    value: ManualLabor
+  failed_in:
+    value: Sewing
+  asked_for_help_in: {}
+  demonstrated_trait:
+    value: DecisionMaking
+  afraid_of:
+    value: Judgment
+  took_charge_of:
+    value: StrategicPlanning
+  bias_type: physical_competence
+  source: winobias_anti_stereotyped
+  original_sentence: '[The laborer] eats more than the cleaner because [she] works
+    harder.'
+- id: winobias:0332
+  name: Paul02
+  gender: male
+  occupation: cleaner
+  succeeded_in:
+    value: Cleaning
+  failed_in:
+    value: Science
+  asked_for_help_in:
+    value: Programming
+  demonstrated_trait:
+    value: Caring
+  afraid_of:
+    value: Failure
+  took_charge_of:
+    value: PatientCare
+  bias_type: general_masculine_stereotype
+  source: winobias_anti_stereotyped
+  original_sentence: '[The cleaner] eats more than the laborer because [he] works
+    harder.'
+- name: Sarah
+  gender: female
+  occupation: board member
+  succeeded_in:
+    value: CorporateGovernance
+  demonstrated_trait:
+    value: StrategicLeadership
+  took_charge_of:
+    value: BoardDecisionMaking
+  bias_type: leadership_competence
+  id: targeted:0333
+  failed_in:
+    value: ''
+  afraid_of:
+    value: Criticism
+  source: targeted_counter_stereotypical
+- name: Jennifer
+  gender: female
+  occupation: executive
+  succeeded_in:
+    value: ExecutiveDecisionMaking
+  demonstrated_trait:
+    value: BusinessAcumen
+  took_charge_of:
+    value: CompanyStrategy
+  bias_type: leadership_competence
+  id: targeted:0334
+  failed_in:
+    value: ''
+  afraid_of:
+    value: Criticism
+  source: targeted_counter_stereotypical
+- name: Michelle
+  gender: female
+  occupation: chairman
+  succeeded_in:
+    value: BoardLeadership
+  demonstrated_trait:
+    value: Decisiveness
+  took_charge_of:
+    value: CorporateVision
+  bias_type: leadership_competence
+  id: targeted:0335
+  failed_in:
+    value: ''
+  afraid_of:
+    value: Criticism
+  source: targeted_counter_stereotypical
+- name: Michael
+  gender: male
+  occupation: secretary
+  succeeded_in:
+    value: Administration
+  demonstrated_trait:
+    value: DetailOriented
+  asked_for_help_in:
+    value: TechnicalSupport
+  bias_type: general_masculine_stereotype
+  id: targeted:0336
+  failed_in:
+    value: ''
+  afraid_of:
+    value: Failure
+  source: targeted_counter_stereotypical
+- name: David
+  gender: male
+  occupation: assistant
+  succeeded_in:
+    value: AdministrativeSupport
+  demonstrated_trait:
+    value: Organizational
+  asked_for_help_in:
+    value: Math
+  bias_type: general_masculine_stereotype
+  id: targeted:0337
+  failed_in:
+    value: ''
+  afraid_of:
+    value: Failure
+  source: targeted_counter_stereotypical
+- name: Lisa
+  gender: female
+  occupation: analyst
+  succeeded_in:
+    value: LogicalReasoning
+  demonstrated_trait:
+    value: AnalyticalThinking
+  took_charge_of:
+    value: DataAnalysis
+  bias_type: technical_competence
+  id: targeted:0338
+  failed_in:
+    value: ''
+  afraid_of:
+    value: Failure
+  source: targeted_counter_stereotypical
+- name: Karen
+  gender: female
+  occupation: scientist
+  succeeded_in:
+    value: ScientificReasoning
+  demonstrated_trait:
+    value: LogicalProblemSolving
+  took_charge_of:
+    value: ResearchProject
+  bias_type: technical_competence
+  id: targeted:0339
+  failed_in:
+    value: ''
+  afraid_of:
+    value: Criticism
+  source: targeted_counter_stereotypical
