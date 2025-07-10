@@ -41,7 +41,7 @@ This project presents an experimental pipeline for detecting and mitigating **ge
 
 - Python 3.x
 - Jupyter Notebook
-- OpenAI GPT API (or equivalent)
+- OpenAI API
 - Pandas, Numpy, Matplotlib
 
 ##  Results
@@ -52,12 +52,26 @@ The notebook visualizes the presence of gender bias and evaluates the reduction 
 
 - Expand to multi-dimensional bias detection (race, age, etc.)
 - Integrate knowledge graphs for context-aware mitigation
+- Expanded knowledge graph to cover differ contexts
 - Automate benchmarking with fairness metrics
 
 ##  License
 
-This project is licensed under the MIT License.
+© 2025 Abhash Shrestha. All rights reserved.
+
+This project is provided for **research, academic, and non-commercial use only**.
+
+- Knowledge Graph (KG) expansions and contributions are welcome.
+- Use of this work in **any commercial context or product requires explicit written permission** from the author.
+- Proper citation is required when referencing this work in academic publications, presentations, or derivative research.
 
 ---
+
+##  How to Reference This Work
+
+If you use or reference this project in your research, please cite it as:
+
+> Abhash Shrestha. *Bias Detection and Mitigation in Large Language Models using Knowledge Graph-Augmented Retrieval.* 2024. GitHub Repository: [https://github.com/Abhash297/RAG-Bias-Mitigation](https://github.com/Abhash297/RAG-Bias-Mitigation)
+
 
 *Feel free to contribute or raise issues for improvements.*
