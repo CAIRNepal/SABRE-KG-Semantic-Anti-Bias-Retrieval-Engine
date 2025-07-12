@@ -70,7 +70,7 @@ This project is provided for **research, academic, and non-commercial use only**
 ##  How to Reference This Work
 
 If you use or reference this project in your research, please cite it as:
-
+```bibtex
 @misc{shrestha2025biasrag,
   title={Bias Detection in Large Language Models, and Mitigation using Knowledge Graph-Augmented Retrieval},
   author={Shrestha, Abhash and Chhetri, Tek Raj},
