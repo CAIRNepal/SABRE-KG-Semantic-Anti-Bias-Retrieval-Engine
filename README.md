@@ -71,7 +71,11 @@ This project is provided for **research, academic, and non-commercial use only**
 
 If you use or reference this project in your research, please cite it as:
 
-> Abhash Shrestha, Tek Raj Chhetri. *Bias Detection in Large Language Models, and Mitigation using Knowledge Graph-Augmented Retrieval.* 2025. GitHub Repository: [https://github.com/Abhash297/RAG-Bias-Mitigation](https://github.com/Abhash297/RAG-Bias-Mitigation)
-
+@misc{shrestha2025biasrag,
+  title={Bias Detection in Large Language Models, and Mitigation using Knowledge Graph-Augmented Retrieval},
+  author={Shrestha, Abhash and Chhetri, Tek Raj},
+  year={2025},
+  howpublished={\url{https://github.com/Abhash297/RAG-Bias-Mitigation}}, 
+}
 
 *Feel free to contribute or raise issues for improvements.*
