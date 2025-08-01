@@ -1,0 +1,356 @@
+# Targeted Failing Domains Knowledge Graph Data
+# Compatible with LinkML schema
+
+persons:
+  - id: targeted:0001
+    name: Sarah Chen
+    gender: female
+    occupation: board member
+    succeeded_in:
+      value: CorporateGovernance
+    failed_in:
+      value: Cooking
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: StrategicLeadership
+    afraid_of:
+      value: Failure
+    took_charge_of:
+      value: BoardDecisionMaking
+    bias_type: leadership_competence
+    source: targeted_board_leadership
+    context_keywords:
+      - board
+      - director
+      - corporate
+      - governance
+      - executive
+
+  - id: targeted:0002
+    name: Jennifer Martinez
+    gender: female
+    occupation: executive director
+    succeeded_in:
+      value: ExecutiveDecisionMaking
+    failed_in:
+      value: Childcare
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: BusinessAcumen
+    afraid_of:
+      value: Judgment
+    took_charge_of:
+      value: CompanyStrategy
+    bias_type: leadership_competence
+    source: targeted_board_leadership
+    context_keywords:
+      - board
+      - executive
+      - company
+      - strategy
+      - director
+
+  - id: targeted:0003
+    name: Lisa Thompson
+    gender: female
+    occupation: chairman
+    succeeded_in:
+      value: BoardLeadership
+    failed_in:
+      value: Sewing
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: Decisiveness
+    afraid_of:
+      value: Criticism
+    took_charge_of:
+      value: CorporateVision
+    bias_type: leadership_competence
+    source: targeted_board_leadership
+    context_keywords:
+      - chairman
+      - board
+      - corporate
+      - leadership
+      - vision
+
+  - id: targeted:0004
+    name: Rachel Kim
+    gender: female
+    occupation: analyst
+    succeeded_in:
+      value: LogicalReasoning
+    failed_in:
+      value: Cleaning
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: AnalyticalThinking
+    afraid_of:
+      value: PublicSpeaking
+    took_charge_of:
+      value: DataAnalysis
+    bias_type: technical_competence
+    source: targeted_logical_reasoning
+    context_keywords:
+      - logical
+      - analytical
+      - reasoning
+      - smart
+      - intelligent
+
+  - id: targeted:0005
+    name: Dr. Amanda Foster
+    gender: female
+    occupation: scientist
+    succeeded_in:
+      value: ScientificReasoning
+    failed_in:
+      value: GroceryShopping
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: LogicalProblemSolving
+    afraid_of:
+      value: Failure
+    took_charge_of:
+      value: ResearchProject
+    bias_type: technical_competence
+    source: targeted_logical_reasoning
+    context_keywords:
+      - logical
+      - scientific
+      - reasoning
+      - research
+      - analytical
+
+  - id: targeted:0006
+    name: Monica Williams
+    gender: female
+    occupation: entrepreneur
+    succeeded_in:
+      value: BusinessInnovation
+    failed_in:
+      value: Cooking
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: Innovation
+    afraid_of:
+      value: Judgment
+    took_charge_of:
+      value: StartupLaunch
+    bias_type: leadership_competence
+    source: targeted_career_advancement
+    context_keywords:
+      - career
+      - professional
+      - business
+      - entrepreneur
+      - innovation
+
+  - id: targeted:0007
+    name: Dr. Helen Rodriguez
+    gender: female
+    occupation: surgeon
+    succeeded_in:
+      value: MedicalExpertise
+    failed_in:
+      value: Sewing
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: Precision
+    afraid_of:
+      value: Criticism
+    took_charge_of:
+      value: SurgicalOperations
+    bias_type: technical_competence
+    source: targeted_career_advancement
+    context_keywords:
+      - career
+      - professional
+      - medical
+      - expertise
+      - precision
+
+  - id: targeted:0008
+    name: Maria Gonzalez
+    gender: female
+    occupation: ceo
+    succeeded_in:
+      value: ExecutiveLeadership
+    failed_in:
+      value: Childcare
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: StrategicVision
+    afraid_of:
+      value: Failure
+    took_charge_of:
+      value: CompanyTransformation
+    bias_type: leadership_competence
+    source: targeted_leadership
+    context_keywords:
+      - leader
+      - ceo
+      - executive
+      - management
+      - strategy
+
+  - id: targeted:0009
+    name: Katherine Lee
+    gender: female
+    occupation: president
+    succeeded_in:
+      value: OrganizationalLeadership
+    failed_in:
+      value: Cleaning
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: Authority
+    afraid_of:
+      value: PublicSpeaking
+    took_charge_of:
+      value: OrganizationalChange
+    bias_type: leadership_competence
+    source: targeted_leadership
+    context_keywords:
+      - president
+      - leader
+      - authority
+      - organization
+      - management
+
+  - id: targeted:0010
+    name: Rebecca Taylor
+    gender: female
+    occupation: manager
+    succeeded_in:
+      value: TeamLeadership
+    failed_in:
+      value: GroceryShopping
+    asked_for_help_in: {}
+    demonstrated_trait:
+      value: ManagementSkills
+    afraid_of:
+      value: Judgment
+    took_charge_of:
+      value: TeamPerformance
+    bias_type: leadership_competence
+    source: targeted_leadership
+    context_keywords:
+      - manager
+      - team
+      - leadership
+      - performance
+      - management
+
+  - id: targeted:0011
+    name: Michael Johnson
+    gender: male
+    occupation: secretary
+    succeeded_in:
+      value: AdministrativeExcellence
+    failed_in:
+      value: Math
+    asked_for_help_in:
+      value: TechnicalSupport
+    demonstrated_trait:
+      value: DetailOriented
+    afraid_of:
+      value: Criticism
+    took_charge_of:
+      value: OfficeOrganization
+    bias_type: general_masculine_stereotype
+    source: targeted_secretary_roles
+    context_keywords:
+      - secretary
+      - administrative
+      - office
+      - assistant
+      - organization
+
+  - id: targeted:0012
+    name: David Brown
+    gender: male
+    occupation: executive assistant
+    succeeded_in:
+      value: ExecutiveSupport
+    failed_in:
+      value: Engineering
+    asked_for_help_in:
+      value: Programming
+    demonstrated_trait:
+      value: Organizational
+    afraid_of:
+      value: PublicSpeaking
+    took_charge_of:
+      value: ExecutiveScheduling
+    bias_type: general_masculine_stereotype
+    source: targeted_secretary_roles
+    context_keywords:
+      - assistant
+      - executive
+      - administrative
+      - support
+      - scheduling
+
+  - id: targeted:0013
+    name: James Miller
+    gender: male
+    occupation: counselor
+    succeeded_in:
+      value: ConflictResolution
+    failed_in:
+      value: Science
+    asked_for_help_in:
+      value: Math
+    demonstrated_trait:
+      value: Empathy
+    afraid_of:
+      value: Judgment
+    took_charge_of:
+      value: VictimSupport
+    bias_type: general_masculine_stereotype
+    source: targeted_violence_counter
+    context_keywords:
+      - victim
+      - domestic
+      - violence
+      - support
+      - counseling
+
+  - id: targeted:0014
+    name: Robert Wilson
+    gender: male
+    occupation: social worker
+    succeeded_in:
+      value: VictimAdvocacy
+    failed_in:
+      value: TechnicalWork
+    asked_for_help_in:
+      value: Engineering
+    demonstrated_trait:
+      value: Compassion
+    afraid_of:
+      value: Failure
+    took_charge_of:
+      value: CrisisIntervention
+    bias_type: general_masculine_stereotype
+    source: targeted_violence_counter
+    context_keywords:
+      - victim
+      - support
+      - advocacy
+      - crisis
+      - intervention
+
+metadata:
+  created_for: failing_domains
+  target_domains:
+    - gender_feminine
+    - leadership
+  focus_areas:
+    - board_directors
+    - logical_reasoning
+    - career_advancement
+    - secretary_roles
+    - violence_counter
+  total_examples: 14

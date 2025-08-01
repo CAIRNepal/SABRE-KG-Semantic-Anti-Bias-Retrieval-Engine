@@ -1,0 +1,176 @@
+# SPARQL Query Templates for Bias Mitigation Retrieval
+# These queries replace the current Python-based scoring system
+
+# Query 1: Find counter-examples by stereotype type and context keywords
+# Parameters: {stereotype_type}, {gender}, {keywords}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX targeted: <https://example.org/targeted-failing-domains/>
+
+SELECT ?person ?name ?occupation ?competency ?trait ?leadership ?context_keywords WHERE {
+    ?person rdf:type targeted:Person ;
+            targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#{gender}> ;
+            targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#{stereotype_type}> ;
+            targeted:name ?name ;
+            targeted:occupation ?occupation ;
+            targeted:context_keywords ?context_keywords .
+    
+    ?person targeted:succeeded_in ?comp_val .
+    ?comp_val targeted:value ?competency .
+    
+    ?person targeted:demonstrated_trait ?trait_val .
+    ?trait_val targeted:value ?trait .
+    
+    ?person targeted:took_charge_of ?leadership_val .
+    ?leadership_val targeted:value ?leadership .
+    
+    FILTER(CONTAINS(LCASE(?context_keywords), LCASE("{keyword}")))
+}
+ORDER BY ?name
+
+# Query 2: Find examples by bias type with scoring
+# Parameters: {bias_type}, {gender}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX targeted: <https://example.org/targeted-failing-domains/>
+
+SELECT ?person ?name ?occupation ?competency ?trait ?leadership
+       (COUNT(?matching_keyword) AS ?keyword_score) WHERE {
+    ?person rdf:type targeted:Person ;
+            targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#{gender}> ;
+            targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#{bias_type}> ;
+            targeted:name ?name ;
+            targeted:occupation ?occupation ;
+            targeted:context_keywords ?keyword .
+    
+    ?person targeted:succeeded_in ?comp_val .
+    ?comp_val targeted:value ?competency .
+    
+    ?person targeted:demonstrated_trait ?trait_val .
+    ?trait_val targeted:value ?trait .
+    
+    ?person targeted:took_charge_of ?leadership_val .
+    ?leadership_val targeted:value ?leadership .
+    
+    OPTIONAL {
+        ?person targeted:context_keywords ?matching_keyword .
+        FILTER(?matching_keyword IN ({keyword_list}))
+    }
+}
+GROUP BY ?person ?name ?occupation ?competency ?trait ?leadership
+ORDER BY DESC(?keyword_score) ?name
+
+# Query 3: Find examples by competency area
+# Parameters: {competency}, {gender}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX targeted: <https://example.org/targeted-failing-domains/>
+
+SELECT ?person ?name ?occupation ?bias_type ?trait ?leadership WHERE {
+    ?person rdf:type targeted:Person ;
+            targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#{gender}> ;
+            targeted:name ?name ;
+            targeted:occupation ?occupation ;
+            targeted:bias_type ?bias_type .
+    
+    ?person targeted:succeeded_in ?comp_val .
+    ?comp_val targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#{competency}> .
+    
+    ?person targeted:demonstrated_trait ?trait_val .
+    ?trait_val targeted:value ?trait .
+    
+    ?person targeted:took_charge_of ?leadership_val .
+    ?leadership_val targeted:value ?leadership .
+}
+ORDER BY ?name
+
+# Query 4: Context-aware retrieval with multiple criteria
+# Parameters: {stereotype_type}, {gender}, {domain}, {context_type}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX targeted: <https://example.org/targeted-failing-domains/>
+
+SELECT DISTINCT ?person ?name ?occupation ?competency ?trait ?leadership ?keywords
+                (COUNT(?matching_context) AS ?context_score) WHERE {
+    ?person rdf:type targeted:Person ;
+            targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#{gender}> ;
+            targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#{stereotype_type}> ;
+            targeted:name ?name ;
+            targeted:occupation ?occupation .
+    
+    ?person targeted:succeeded_in ?comp_val .
+    ?comp_val targeted:value ?competency .
+    
+    ?person targeted:demonstrated_trait ?trait_val .
+    ?trait_val targeted:value ?trait .
+    
+    ?person targeted:took_charge_of ?leadership_val .
+    ?leadership_val targeted:value ?leadership .
+    
+    ?person targeted:context_keywords ?keywords .
+    
+    OPTIONAL {
+        ?person targeted:context_keywords ?matching_context .
+        FILTER(CONTAINS(LCASE(?matching_context), LCASE("{domain}")) || 
+               CONTAINS(LCASE(?matching_context), LCASE("{context_type}")))
+    }
+}
+GROUP BY ?person ?name ?occupation ?competency ?trait ?leadership ?keywords
+HAVING (?context_score > 0)
+ORDER BY DESC(?context_score) ?name
+
+# Query 5: Advanced scoring with trait matching
+# Parameters: {stereotype_type}, {gender}, {desired_traits}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX targeted: <https://example.org/targeted-failing-domains/>
+
+SELECT ?person ?name ?occupation ?competency ?trait ?leadership
+       (?keyword_matches + ?trait_bonus) AS ?total_score WHERE {
+    {
+        SELECT ?person ?name ?occupation ?competency ?trait ?leadership
+               (COUNT(?matching_keyword) AS ?keyword_matches)
+               (IF(?trait IN ({desired_traits}), 5, 0) AS ?trait_bonus) WHERE {
+            ?person rdf:type targeted:Person ;
+                    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#{gender}> ;
+                    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#{stereotype_type}> ;
+                    targeted:name ?name ;
+                    targeted:occupation ?occupation .
+            
+            ?person targeted:succeeded_in ?comp_val .
+            ?comp_val targeted:value ?competency .
+            
+            ?person targeted:demonstrated_trait ?trait_val .
+            ?trait_val targeted:value ?trait .
+            
+            ?person targeted:took_charge_of ?leadership_val .
+            ?leadership_val targeted:value ?leadership .
+            
+            OPTIONAL {
+                ?person targeted:context_keywords ?matching_keyword .
+                FILTER(?matching_keyword IN ({keyword_list}))
+            }
+        }
+        GROUP BY ?person ?name ?occupation ?competency ?trait ?leadership
+    }
+}
+ORDER BY DESC(?total_score) ?name
+
+# Query 6: Find examples with source filtering
+# Parameters: {source_category}, {gender}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX targeted: <https://example.org/targeted-failing-domains/>
+
+SELECT ?person ?name ?occupation ?bias_type ?competency ?trait ?leadership WHERE {
+    ?person rdf:type targeted:Person ;
+            targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#{gender}> ;
+            targeted:source <https://example.org/targeted-failing-domains/SourceEnum#{source_category}> ;
+            targeted:name ?name ;
+            targeted:occupation ?occupation ;
+            targeted:bias_type ?bias_type .
+    
+    ?person targeted:succeeded_in ?comp_val .
+    ?comp_val targeted:value ?competency .
+    
+    ?person targeted:demonstrated_trait ?trait_val .
+    ?trait_val targeted:value ?trait .
+    
+    ?person targeted:took_charge_of ?leadership_val .
+    ?leadership_val targeted:value ?leadership .
+}
+ORDER BY ?name 

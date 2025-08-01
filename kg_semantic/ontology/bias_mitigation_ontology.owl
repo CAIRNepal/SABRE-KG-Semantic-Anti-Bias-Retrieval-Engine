@@ -1,0 +1,766 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix linkml: <https://w3id.org/linkml/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix targeted: <https://example.org/targeted-failing-domains/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/targeted-failing-domains.owl.ttl> a owl:Ontology ;
+    rdfs:label "targeted-failing-domains-kg" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Targeted Failing Domains Knowledge Graph" ;
+    pav:version "1.0.0" ;
+    skos:definition "A knowledge graph capturing person entities with attributes related to  gender, occupation, competencies, and biases for studying failing domains." .
+
+targeted:Container a owl:Class ;
+    rdfs:label "Container" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty targeted:persons ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:metadata ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:Metadata ;
+            owl:onProperty targeted:metadata ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:metadata ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:Person ;
+            owl:onProperty targeted:persons ] ;
+    skos:definition "The root container for all knowledge graph data" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:CompetencyValue a owl:Class ;
+    rdfs:label "CompetencyValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom targeted:CompetencyEnum ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:value ] ;
+    skos:definition "A competency area where someone succeeded" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:FailureValue a owl:Class ;
+    rdfs:label "FailureValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:FailureEnum ;
+            owl:onProperty targeted:value ] ;
+    skos:definition "An area where someone failed" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:FearValue a owl:Class ;
+    rdfs:label "FearValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom targeted:FearEnum ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:value ] ;
+    skos:definition "Something someone is afraid of" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:HelpValue a owl:Class ;
+    rdfs:label "HelpValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:HelpEnum ;
+            owl:onProperty targeted:value ] ;
+    skos:definition "An area where someone asked for help" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:LeadershipValue a owl:Class ;
+    rdfs:label "LeadershipValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:LeadershipEnum ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:value ] ;
+    skos:definition "Something someone took charge of" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:Metadata a owl:Class ;
+    rdfs:label "Metadata" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty targeted:created_for ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:total_examples ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( xsd:integer [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:integer ;
+                                owl:withRestrictions ( [ xsd:minInclusive 0 ] ) ] ) ] ;
+            owl:onProperty targeted:total_examples ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:target_domains ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:created_for ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:created_for ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty targeted:focus_areas ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:total_examples ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty targeted:target_domains ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:focus_areas ] ;
+    skos:definition "Metadata about the knowledge graph" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:succeeded_in ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:demonstrated_trait ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:HelpValue ;
+            owl:onProperty targeted:asked_for_help_in ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty targeted:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:took_charge_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:CompetencyValue ;
+            owl:onProperty targeted:succeeded_in ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:failed_in ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:LeadershipValue ;
+            owl:onProperty targeted:took_charge_of ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:failed_in ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:succeeded_in ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:gender ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty targeted:context_keywords ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:source ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:afraid_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:GenderEnum ;
+            owl:onProperty targeted:gender ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty targeted:occupation ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:bias_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:occupation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:TraitValue ;
+            owl:onProperty targeted:demonstrated_trait ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:took_charge_of ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty targeted:asked_for_help_in ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:BiasTypeEnum ;
+            owl:onProperty targeted:bias_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:FearValue ;
+            owl:onProperty targeted:afraid_of ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( xsd:anyURI [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^targeted:[0-9]{4}$" ] ) ] ) ] ;
+            owl:onProperty targeted:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:afraid_of ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:demonstrated_trait ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:source ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:context_keywords ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:asked_for_help_in ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:FailureValue ;
+            owl:onProperty targeted:failed_in ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:SourceEnum ;
+            owl:onProperty targeted:source ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:occupation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:gender ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:bias_type ] ;
+    skos:definition "A person entity with various attributes and competencies" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:TraitValue a owl:Class ;
+    rdfs:label "TraitValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom targeted:TraitEnum ;
+            owl:onProperty targeted:value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty targeted:value ] ;
+    skos:definition "A demonstrated trait" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+<https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype> a owl:Class ;
+    rdfs:label "general_masculine_stereotype" ;
+    rdfs:subClassOf targeted:BiasTypeEnum .
+
+<https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> a owl:Class ;
+    rdfs:label "leadership_competence" ;
+    rdfs:subClassOf targeted:BiasTypeEnum .
+
+<https://example.org/targeted-failing-domains/BiasTypeEnum#technical_competence> a owl:Class ;
+    rdfs:label "technical_competence" ;
+    rdfs:subClassOf targeted:BiasTypeEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#AdministrativeExcellence> a owl:Class ;
+    rdfs:label "AdministrativeExcellence" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#BoardLeadership> a owl:Class ;
+    rdfs:label "BoardLeadership" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#BusinessInnovation> a owl:Class ;
+    rdfs:label "BusinessInnovation" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#ConflictResolution> a owl:Class ;
+    rdfs:label "ConflictResolution" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#CorporateGovernance> a owl:Class ;
+    rdfs:label "CorporateGovernance" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveDecisionMaking> a owl:Class ;
+    rdfs:label "ExecutiveDecisionMaking" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveLeadership> a owl:Class ;
+    rdfs:label "ExecutiveLeadership" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveSupport> a owl:Class ;
+    rdfs:label "ExecutiveSupport" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#LogicalReasoning> a owl:Class ;
+    rdfs:label "LogicalReasoning" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#MedicalExpertise> a owl:Class ;
+    rdfs:label "MedicalExpertise" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#OrganizationalLeadership> a owl:Class ;
+    rdfs:label "OrganizationalLeadership" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#ScientificReasoning> a owl:Class ;
+    rdfs:label "ScientificReasoning" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#TeamLeadership> a owl:Class ;
+    rdfs:label "TeamLeadership" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/CompetencyEnum#VictimAdvocacy> a owl:Class ;
+    rdfs:label "VictimAdvocacy" ;
+    rdfs:subClassOf targeted:CompetencyEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#Childcare> a owl:Class ;
+    rdfs:label "Childcare" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#Cleaning> a owl:Class ;
+    rdfs:label "Cleaning" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#Cooking> a owl:Class ;
+    rdfs:label "Cooking" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#Engineering> a owl:Class ;
+    rdfs:label "Engineering" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#GroceryShopping> a owl:Class ;
+    rdfs:label "GroceryShopping" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#Math> a owl:Class ;
+    rdfs:label "Math" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#Science> a owl:Class ;
+    rdfs:label "Science" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#Sewing> a owl:Class ;
+    rdfs:label "Sewing" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FailureEnum#TechnicalWork> a owl:Class ;
+    rdfs:label "TechnicalWork" ;
+    rdfs:subClassOf targeted:FailureEnum .
+
+<https://example.org/targeted-failing-domains/FearEnum#Criticism> a owl:Class ;
+    rdfs:label "Criticism" ;
+    rdfs:subClassOf targeted:FearEnum .
+
+<https://example.org/targeted-failing-domains/FearEnum#Failure> a owl:Class ;
+    rdfs:label "Failure" ;
+    rdfs:subClassOf targeted:FearEnum .
+
+<https://example.org/targeted-failing-domains/FearEnum#Judgment> a owl:Class ;
+    rdfs:label "Judgment" ;
+    rdfs:subClassOf targeted:FearEnum .
+
+<https://example.org/targeted-failing-domains/FearEnum#PublicSpeaking> a owl:Class ;
+    rdfs:label "PublicSpeaking" ;
+    rdfs:subClassOf targeted:FearEnum .
+
+<https://example.org/targeted-failing-domains/GenderEnum#female> a owl:Class ;
+    rdfs:label "female" ;
+    rdfs:subClassOf targeted:GenderEnum .
+
+<https://example.org/targeted-failing-domains/GenderEnum#male> a owl:Class ;
+    rdfs:label "male" ;
+    rdfs:subClassOf targeted:GenderEnum .
+
+<https://example.org/targeted-failing-domains/GenderEnum#non-binary> a owl:Class ;
+    rdfs:label "non-binary" ;
+    rdfs:subClassOf targeted:GenderEnum .
+
+<https://example.org/targeted-failing-domains/GenderEnum#other> a owl:Class ;
+    rdfs:label "other" ;
+    rdfs:subClassOf targeted:GenderEnum .
+
+<https://example.org/targeted-failing-domains/HelpEnum#Engineering> a owl:Class ;
+    rdfs:label "Engineering" ;
+    rdfs:subClassOf targeted:HelpEnum .
+
+<https://example.org/targeted-failing-domains/HelpEnum#Math> a owl:Class ;
+    rdfs:label "Math" ;
+    rdfs:subClassOf targeted:HelpEnum .
+
+<https://example.org/targeted-failing-domains/HelpEnum#Programming> a owl:Class ;
+    rdfs:label "Programming" ;
+    rdfs:subClassOf targeted:HelpEnum .
+
+<https://example.org/targeted-failing-domains/HelpEnum#TechnicalSupport> a owl:Class ;
+    rdfs:label "TechnicalSupport" ;
+    rdfs:subClassOf targeted:HelpEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#BoardDecisionMaking> a owl:Class ;
+    rdfs:label "BoardDecisionMaking" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#CompanyStrategy> a owl:Class ;
+    rdfs:label "CompanyStrategy" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#CompanyTransformation> a owl:Class ;
+    rdfs:label "CompanyTransformation" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#CorporateVision> a owl:Class ;
+    rdfs:label "CorporateVision" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#CrisisIntervention> a owl:Class ;
+    rdfs:label "CrisisIntervention" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#DataAnalysis> a owl:Class ;
+    rdfs:label "DataAnalysis" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#ExecutiveScheduling> a owl:Class ;
+    rdfs:label "ExecutiveScheduling" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#OfficeOrganization> a owl:Class ;
+    rdfs:label "OfficeOrganization" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#OrganizationalChange> a owl:Class ;
+    rdfs:label "OrganizationalChange" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#ResearchProject> a owl:Class ;
+    rdfs:label "ResearchProject" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#StartupLaunch> a owl:Class ;
+    rdfs:label "StartupLaunch" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#SurgicalOperations> a owl:Class ;
+    rdfs:label "SurgicalOperations" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#TeamPerformance> a owl:Class ;
+    rdfs:label "TeamPerformance" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/LeadershipEnum#VictimSupport> a owl:Class ;
+    rdfs:label "VictimSupport" ;
+    rdfs:subClassOf targeted:LeadershipEnum .
+
+<https://example.org/targeted-failing-domains/SourceEnum#targeted_board_leadership> a owl:Class ;
+    rdfs:label "targeted_board_leadership" ;
+    rdfs:subClassOf targeted:SourceEnum .
+
+<https://example.org/targeted-failing-domains/SourceEnum#targeted_career_advancement> a owl:Class ;
+    rdfs:label "targeted_career_advancement" ;
+    rdfs:subClassOf targeted:SourceEnum .
+
+<https://example.org/targeted-failing-domains/SourceEnum#targeted_leadership> a owl:Class ;
+    rdfs:label "targeted_leadership" ;
+    rdfs:subClassOf targeted:SourceEnum .
+
+<https://example.org/targeted-failing-domains/SourceEnum#targeted_logical_reasoning> a owl:Class ;
+    rdfs:label "targeted_logical_reasoning" ;
+    rdfs:subClassOf targeted:SourceEnum .
+
+<https://example.org/targeted-failing-domains/SourceEnum#targeted_secretary_roles> a owl:Class ;
+    rdfs:label "targeted_secretary_roles" ;
+    rdfs:subClassOf targeted:SourceEnum .
+
+<https://example.org/targeted-failing-domains/SourceEnum#targeted_violence_counter> a owl:Class ;
+    rdfs:label "targeted_violence_counter" ;
+    rdfs:subClassOf targeted:SourceEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#AnalyticalThinking> a owl:Class ;
+    rdfs:label "AnalyticalThinking" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#Authority> a owl:Class ;
+    rdfs:label "Authority" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#BusinessAcumen> a owl:Class ;
+    rdfs:label "BusinessAcumen" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#Compassion> a owl:Class ;
+    rdfs:label "Compassion" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#Decisiveness> a owl:Class ;
+    rdfs:label "Decisiveness" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#DetailOriented> a owl:Class ;
+    rdfs:label "DetailOriented" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#Empathy> a owl:Class ;
+    rdfs:label "Empathy" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#Innovation> a owl:Class ;
+    rdfs:label "Innovation" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#LogicalProblemSolving> a owl:Class ;
+    rdfs:label "LogicalProblemSolving" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#ManagementSkills> a owl:Class ;
+    rdfs:label "ManagementSkills" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#Organizational> a owl:Class ;
+    rdfs:label "Organizational" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#Precision> a owl:Class ;
+    rdfs:label "Precision" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#StrategicLeadership> a owl:Class ;
+    rdfs:label "StrategicLeadership" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+<https://example.org/targeted-failing-domains/TraitEnum#StrategicVision> a owl:Class ;
+    rdfs:label "StrategicVision" ;
+    rdfs:subClassOf targeted:TraitEnum .
+
+targeted:context_keywords a owl:DatatypeProperty ;
+    rdfs:label "context_keywords" ;
+    skos:definition "Keywords that provide context for this person's role" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:focus_areas a owl:DatatypeProperty ;
+    rdfs:label "focus_areas" ;
+    skos:definition "Specific focus areas covered" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:persons a owl:ObjectProperty ;
+    rdfs:label "persons" ;
+    skos:definition "List of all person entities" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:target_domains a owl:DatatypeProperty ;
+    rdfs:label "target_domains" ;
+    skos:definition "Domains this KG targets" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:afraid_of a owl:ObjectProperty ;
+    rdfs:label "afraid_of" ;
+    skos:definition "What this person is afraid of" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:asked_for_help_in a owl:ObjectProperty ;
+    rdfs:label "asked_for_help_in" ;
+    skos:definition "Area where this person asked for help" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:bias_type a owl:ObjectProperty ;
+    rdfs:label "bias_type" ;
+    skos:definition "Type of bias this example targets" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:created_for a owl:DatatypeProperty ;
+    rdfs:label "created_for" ;
+    skos:definition "Purpose of this knowledge graph" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:demonstrated_trait a owl:ObjectProperty ;
+    rdfs:label "demonstrated_trait" ;
+    skos:definition "Key trait this person demonstrated" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:failed_in a owl:ObjectProperty ;
+    rdfs:label "failed_in" ;
+    skos:definition "Area where this person failed" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:gender a owl:ObjectProperty ;
+    rdfs:label "gender" ;
+    skos:definition "Gender identity" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:id a owl:DatatypeProperty ;
+    rdfs:label "id" ;
+    skos:definition "Unique identifier with format 'targeted:XXXX'" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:metadata a owl:ObjectProperty ;
+    rdfs:label "metadata" ;
+    skos:definition "Metadata about this knowledge graph" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    skos:definition "Full name of the person" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:occupation a owl:DatatypeProperty ;
+    rdfs:label "occupation" ;
+    skos:definition "Professional role or job title" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:source a owl:ObjectProperty ;
+    rdfs:label "source" ;
+    skos:definition "Source category for this data point" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:succeeded_in a owl:ObjectProperty ;
+    rdfs:label "succeeded_in" ;
+    skos:definition "Area where this person succeeded" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:took_charge_of a owl:ObjectProperty ;
+    rdfs:label "took_charge_of" ;
+    skos:definition "What this person took charge of" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:total_examples a owl:DatatypeProperty ;
+    rdfs:label "total_examples" ;
+    skos:definition "Total number of person examples" ;
+    skos:inScheme <https://example.org/targeted-failing-domains> .
+
+targeted:BiasTypeEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> <https://example.org/targeted-failing-domains/BiasTypeEnum#technical_competence> <https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype>,
+        <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence>,
+        <https://example.org/targeted-failing-domains/BiasTypeEnum#technical_competence> .
+
+targeted:FearEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/FearEnum#Failure> <https://example.org/targeted-failing-domains/FearEnum#Judgment> <https://example.org/targeted-failing-domains/FearEnum#Criticism> <https://example.org/targeted-failing-domains/FearEnum#PublicSpeaking> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/FearEnum#Criticism>,
+        <https://example.org/targeted-failing-domains/FearEnum#Failure>,
+        <https://example.org/targeted-failing-domains/FearEnum#Judgment>,
+        <https://example.org/targeted-failing-domains/FearEnum#PublicSpeaking> .
+
+targeted:GenderEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/GenderEnum#male> <https://example.org/targeted-failing-domains/GenderEnum#female> <https://example.org/targeted-failing-domains/GenderEnum#non-binary> <https://example.org/targeted-failing-domains/GenderEnum#other> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/GenderEnum#female>,
+        <https://example.org/targeted-failing-domains/GenderEnum#male>,
+        <https://example.org/targeted-failing-domains/GenderEnum#non-binary>,
+        <https://example.org/targeted-failing-domains/GenderEnum#other> .
+
+targeted:HelpEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/HelpEnum#TechnicalSupport> <https://example.org/targeted-failing-domains/HelpEnum#Programming> <https://example.org/targeted-failing-domains/HelpEnum#Math> <https://example.org/targeted-failing-domains/HelpEnum#Engineering> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/HelpEnum#Engineering>,
+        <https://example.org/targeted-failing-domains/HelpEnum#Math>,
+        <https://example.org/targeted-failing-domains/HelpEnum#Programming>,
+        <https://example.org/targeted-failing-domains/HelpEnum#TechnicalSupport> .
+
+targeted:SourceEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/SourceEnum#targeted_board_leadership> <https://example.org/targeted-failing-domains/SourceEnum#targeted_logical_reasoning> <https://example.org/targeted-failing-domains/SourceEnum#targeted_career_advancement> <https://example.org/targeted-failing-domains/SourceEnum#targeted_leadership> <https://example.org/targeted-failing-domains/SourceEnum#targeted_secretary_roles> <https://example.org/targeted-failing-domains/SourceEnum#targeted_violence_counter> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/SourceEnum#targeted_board_leadership>,
+        <https://example.org/targeted-failing-domains/SourceEnum#targeted_career_advancement>,
+        <https://example.org/targeted-failing-domains/SourceEnum#targeted_leadership>,
+        <https://example.org/targeted-failing-domains/SourceEnum#targeted_logical_reasoning>,
+        <https://example.org/targeted-failing-domains/SourceEnum#targeted_secretary_roles>,
+        <https://example.org/targeted-failing-domains/SourceEnum#targeted_violence_counter> .
+
+targeted:FailureEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/FailureEnum#Cooking> <https://example.org/targeted-failing-domains/FailureEnum#Childcare> <https://example.org/targeted-failing-domains/FailureEnum#Sewing> <https://example.org/targeted-failing-domains/FailureEnum#Cleaning> <https://example.org/targeted-failing-domains/FailureEnum#GroceryShopping> <https://example.org/targeted-failing-domains/FailureEnum#Math> <https://example.org/targeted-failing-domains/FailureEnum#Engineering> <https://example.org/targeted-failing-domains/FailureEnum#Science> <https://example.org/targeted-failing-domains/FailureEnum#TechnicalWork> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/FailureEnum#Childcare>,
+        <https://example.org/targeted-failing-domains/FailureEnum#Cleaning>,
+        <https://example.org/targeted-failing-domains/FailureEnum#Cooking>,
+        <https://example.org/targeted-failing-domains/FailureEnum#Engineering>,
+        <https://example.org/targeted-failing-domains/FailureEnum#GroceryShopping>,
+        <https://example.org/targeted-failing-domains/FailureEnum#Math>,
+        <https://example.org/targeted-failing-domains/FailureEnum#Science>,
+        <https://example.org/targeted-failing-domains/FailureEnum#Sewing>,
+        <https://example.org/targeted-failing-domains/FailureEnum#TechnicalWork> .
+
+targeted:CompetencyEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/CompetencyEnum#CorporateGovernance> <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveDecisionMaking> <https://example.org/targeted-failing-domains/CompetencyEnum#BoardLeadership> <https://example.org/targeted-failing-domains/CompetencyEnum#LogicalReasoning> <https://example.org/targeted-failing-domains/CompetencyEnum#ScientificReasoning> <https://example.org/targeted-failing-domains/CompetencyEnum#BusinessInnovation> <https://example.org/targeted-failing-domains/CompetencyEnum#MedicalExpertise> <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveLeadership> <https://example.org/targeted-failing-domains/CompetencyEnum#OrganizationalLeadership> <https://example.org/targeted-failing-domains/CompetencyEnum#TeamLeadership> <https://example.org/targeted-failing-domains/CompetencyEnum#AdministrativeExcellence> <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveSupport> <https://example.org/targeted-failing-domains/CompetencyEnum#ConflictResolution> <https://example.org/targeted-failing-domains/CompetencyEnum#VictimAdvocacy> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/CompetencyEnum#AdministrativeExcellence>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#BoardLeadership>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#BusinessInnovation>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#ConflictResolution>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#CorporateGovernance>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveDecisionMaking>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveLeadership>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveSupport>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#LogicalReasoning>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#MedicalExpertise>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#OrganizationalLeadership>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#ScientificReasoning>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#TeamLeadership>,
+        <https://example.org/targeted-failing-domains/CompetencyEnum#VictimAdvocacy> .
+
+targeted:LeadershipEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/LeadershipEnum#BoardDecisionMaking> <https://example.org/targeted-failing-domains/LeadershipEnum#CompanyStrategy> <https://example.org/targeted-failing-domains/LeadershipEnum#CorporateVision> <https://example.org/targeted-failing-domains/LeadershipEnum#DataAnalysis> <https://example.org/targeted-failing-domains/LeadershipEnum#ResearchProject> <https://example.org/targeted-failing-domains/LeadershipEnum#StartupLaunch> <https://example.org/targeted-failing-domains/LeadershipEnum#SurgicalOperations> <https://example.org/targeted-failing-domains/LeadershipEnum#CompanyTransformation> <https://example.org/targeted-failing-domains/LeadershipEnum#OrganizationalChange> <https://example.org/targeted-failing-domains/LeadershipEnum#TeamPerformance> <https://example.org/targeted-failing-domains/LeadershipEnum#OfficeOrganization> <https://example.org/targeted-failing-domains/LeadershipEnum#ExecutiveScheduling> <https://example.org/targeted-failing-domains/LeadershipEnum#VictimSupport> <https://example.org/targeted-failing-domains/LeadershipEnum#CrisisIntervention> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/LeadershipEnum#BoardDecisionMaking>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#CompanyStrategy>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#CompanyTransformation>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#CorporateVision>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#CrisisIntervention>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#DataAnalysis>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#ExecutiveScheduling>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#OfficeOrganization>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#OrganizationalChange>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#ResearchProject>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#StartupLaunch>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#SurgicalOperations>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#TeamPerformance>,
+        <https://example.org/targeted-failing-domains/LeadershipEnum#VictimSupport> .
+
+targeted:TraitEnum a owl:Class ;
+    owl:unionOf ( <https://example.org/targeted-failing-domains/TraitEnum#StrategicLeadership> <https://example.org/targeted-failing-domains/TraitEnum#BusinessAcumen> <https://example.org/targeted-failing-domains/TraitEnum#Decisiveness> <https://example.org/targeted-failing-domains/TraitEnum#AnalyticalThinking> <https://example.org/targeted-failing-domains/TraitEnum#LogicalProblemSolving> <https://example.org/targeted-failing-domains/TraitEnum#Innovation> <https://example.org/targeted-failing-domains/TraitEnum#Precision> <https://example.org/targeted-failing-domains/TraitEnum#StrategicVision> <https://example.org/targeted-failing-domains/TraitEnum#Authority> <https://example.org/targeted-failing-domains/TraitEnum#ManagementSkills> <https://example.org/targeted-failing-domains/TraitEnum#DetailOriented> <https://example.org/targeted-failing-domains/TraitEnum#Organizational> <https://example.org/targeted-failing-domains/TraitEnum#Empathy> <https://example.org/targeted-failing-domains/TraitEnum#Compassion> ) ;
+    linkml:permissible_values <https://example.org/targeted-failing-domains/TraitEnum#AnalyticalThinking>,
+        <https://example.org/targeted-failing-domains/TraitEnum#Authority>,
+        <https://example.org/targeted-failing-domains/TraitEnum#BusinessAcumen>,
+        <https://example.org/targeted-failing-domains/TraitEnum#Compassion>,
+        <https://example.org/targeted-failing-domains/TraitEnum#Decisiveness>,
+        <https://example.org/targeted-failing-domains/TraitEnum#DetailOriented>,
+        <https://example.org/targeted-failing-domains/TraitEnum#Empathy>,
+        <https://example.org/targeted-failing-domains/TraitEnum#Innovation>,
+        <https://example.org/targeted-failing-domains/TraitEnum#LogicalProblemSolving>,
+        <https://example.org/targeted-failing-domains/TraitEnum#ManagementSkills>,
+        <https://example.org/targeted-failing-domains/TraitEnum#Organizational>,
+        <https://example.org/targeted-failing-domains/TraitEnum#Precision>,
+        <https://example.org/targeted-failing-domains/TraitEnum#StrategicLeadership>,
+        <https://example.org/targeted-failing-domains/TraitEnum#StrategicVision> .
+
+targeted:value a owl:ObjectProperty .
+
+

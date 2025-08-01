@@ -1,0 +1,27 @@
+# All Persons
+SELECT ?person ?name ?gender ?occupation WHERE {
+                    ?person rdf:type targeted:Person ;
+                            targeted:name ?name ;
+                            targeted:gender ?gender ;
+                            targeted:occupation ?occupation .
+                }
+
+# Leadership Competent Females
+SELECT ?person ?name ?occupation ?competency WHERE {
+                    ?person rdf:type targeted:Person ;
+                            targeted:gender targeted:GenderEnum#female ;
+                            targeted:bias_type targeted:BiasTypeEnum#leadership_competence ;
+                            targeted:name ?name ;
+                            targeted:occupation ?occupation .
+                    
+                    ?person targeted:succeeded_in ?comp_val .
+                    ?comp_val targeted:value ?competency .
+                }
+
+# Context Keywords
+SELECT ?person ?name ?keyword WHERE {
+                    ?person rdf:type targeted:Person ;
+                            targeted:name ?name ;
+                            targeted:context_keywords ?keyword .
+                }
+

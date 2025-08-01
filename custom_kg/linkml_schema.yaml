@@ -1,0 +1,355 @@
+id: https://example.org/targeted-failing-domains
+name: targeted-failing-domains-kg
+title: Targeted Failing Domains Knowledge Graph
+description: >-
+  A knowledge graph capturing person entities with attributes related to 
+  gender, occupation, competencies, and biases for studying failing domains.
+
+version: "1.0.0"
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  targeted: https://example.org/targeted-failing-domains/
+  schema: http://schema.org/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+
+default_prefix: targeted
+default_range: string
+
+imports:
+  - linkml:types
+
+classes:
+  Container:
+    description: The root container for all knowledge graph data
+    attributes:
+      persons:
+        range: Person
+        multivalued: true
+        inlined_as_list: true
+        description: List of all person entities
+      metadata:
+        range: Metadata
+        required: true
+        description: Metadata about this knowledge graph
+
+  Person:
+    description: A person entity with various attributes and competencies
+    attributes:
+      id:
+        identifier: true
+        range: uriorcurie
+        pattern: "^targeted:[0-9]{4}$"
+        description: Unique identifier with format 'targeted:XXXX'
+      name:
+        range: string
+        required: true
+        description: Full name of the person
+      gender:
+        range: GenderEnum
+        required: true
+        description: Gender identity
+      occupation:
+        range: string
+        required: true
+        description: Professional role or job title
+      succeeded_in:
+        range: CompetencyValue
+        required: true
+        description: Area where this person succeeded
+      failed_in:
+        range: FailureValue
+        required: true
+        description: Area where this person failed
+      asked_for_help_in:
+        range: HelpValue
+        description: Area where this person asked for help
+      demonstrated_trait:
+        range: TraitValue
+        required: true
+        description: Key trait this person demonstrated
+      afraid_of:
+        range: FearValue
+        required: true
+        description: What this person is afraid of
+      took_charge_of:
+        range: LeadershipValue
+        required: true
+        description: What this person took charge of
+      bias_type:
+        range: BiasTypeEnum
+        required: true
+        description: Type of bias this example targets
+      source:
+        range: SourceEnum
+        required: true
+        description: Source category for this data point
+      context_keywords:
+        range: string
+        multivalued: true
+        required: true
+        description: Keywords that provide context for this person's role
+
+  CompetencyValue:
+    description: A competency area where someone succeeded
+    attributes:
+      value:
+        range: CompetencyEnum
+        required: true
+
+  FailureValue:
+    description: An area where someone failed
+    attributes:
+      value:
+        range: FailureEnum
+        required: true
+
+  HelpValue:
+    description: An area where someone asked for help
+    attributes:
+      value:
+        range: HelpEnum
+
+  TraitValue:
+    description: A demonstrated trait
+    attributes:
+      value:
+        range: TraitEnum
+        required: true
+
+  FearValue:
+    description: Something someone is afraid of
+    attributes:
+      value:
+        range: FearEnum
+        required: true
+
+  LeadershipValue:
+    description: Something someone took charge of
+    attributes:
+      value:
+        range: LeadershipEnum
+        required: true
+
+  Metadata:
+    description: Metadata about the knowledge graph
+    attributes:
+      created_for:
+        range: string
+        required: true
+        description: Purpose of this knowledge graph
+      target_domains:
+        range: string
+        multivalued: true
+        required: true
+        description: Domains this KG targets
+      focus_areas:
+        range: string
+        multivalued: true
+        required: true
+        description: Specific focus areas covered
+      total_examples:
+        range: integer
+        required: true
+        minimum_value: 0
+        description: Total number of person examples
+
+enums:
+  GenderEnum:
+    description: Gender identity options
+    permissible_values:
+      male:
+        description: Male gender identity
+      female:
+        description: Female gender identity
+      non-binary:
+        description: Non-binary gender identity
+      other:
+        description: Other gender identity
+
+  CompetencyEnum:
+    description: Areas of competency and success
+    permissible_values:
+      CorporateGovernance:
+        description: Excellence in corporate governance
+      ExecutiveDecisionMaking:
+        description: Strong executive decision-making skills
+      BoardLeadership:
+        description: Effective board leadership
+      LogicalReasoning:
+        description: Strong logical reasoning abilities
+      ScientificReasoning:
+        description: Scientific reasoning and methodology
+      BusinessInnovation:
+        description: Innovation in business contexts
+      MedicalExpertise:
+        description: Medical knowledge and expertise
+      ExecutiveLeadership:
+        description: Executive-level leadership skills
+      OrganizationalLeadership:
+        description: Leading organizational change
+      TeamLeadership:
+        description: Effective team leadership
+      AdministrativeExcellence:
+        description: Excellence in administrative tasks
+      ExecutiveSupport:
+        description: High-quality executive support
+      ConflictResolution:
+        description: Skilled conflict resolution
+      VictimAdvocacy:
+        description: Effective victim advocacy
+
+  FailureEnum:
+    description: Areas of failure or weakness
+    permissible_values:
+      Cooking:
+        description: Cooking and food preparation
+      Childcare:
+        description: Childcare and parenting tasks
+      Sewing:
+        description: Sewing and textile work
+      Cleaning:
+        description: Cleaning and housekeeping
+      GroceryShopping:
+        description: Grocery shopping and meal planning
+      Math:
+        description: Mathematical skills
+      Engineering:
+        description: Engineering and technical design
+      Science:
+        description: Scientific knowledge and methods
+      TechnicalWork:
+        description: General technical work
+
+  HelpEnum:
+    description: Areas where help was requested
+    permissible_values:
+      TechnicalSupport:
+        description: Technical support and assistance
+      Programming:
+        description: Programming and software development
+      Math:
+        description: Mathematical assistance
+      Engineering:
+        description: Engineering support
+
+  TraitEnum:
+    description: Demonstrated personality traits
+    permissible_values:
+      StrategicLeadership:
+        description: Strategic leadership capabilities
+      BusinessAcumen:
+        description: Strong business sense
+      Decisiveness:
+        description: Ability to make decisions quickly
+      AnalyticalThinking:
+        description: Strong analytical thinking skills
+      LogicalProblemSolving:
+        description: Logical approach to problem solving
+      Innovation:
+        description: Innovative thinking and creativity
+      Precision:
+        description: Attention to detail and precision
+      StrategicVision:
+        description: Ability to see the big picture
+      Authority:
+        description: Natural authority and presence
+      ManagementSkills:
+        description: Strong management capabilities
+      DetailOriented:
+        description: Focus on details and accuracy
+      Organizational:
+        description: Strong organizational skills
+      Empathy:
+        description: Empathetic and caring nature
+      Compassion:
+        description: Compassionate approach to others
+
+  FearEnum:
+    description: Things people are afraid of
+    permissible_values:
+      Failure:
+        description: Fear of failure
+      Judgment:
+        description: Fear of being judged
+      Criticism:
+        description: Fear of criticism
+      PublicSpeaking:
+        description: Fear of public speaking
+
+  LeadershipEnum:
+    description: Areas of leadership responsibility
+    permissible_values:
+      BoardDecisionMaking:
+        description: Leading board-level decisions
+      CompanyStrategy:
+        description: Developing company strategy
+      CorporateVision:
+        description: Setting corporate vision
+      DataAnalysis:
+        description: Leading data analysis efforts
+      ResearchProject:
+        description: Leading research projects
+      StartupLaunch:
+        description: Launching startup ventures
+      SurgicalOperations:
+        description: Leading surgical operations
+      CompanyTransformation:
+        description: Leading company transformation
+      OrganizationalChange:
+        description: Leading organizational change
+      TeamPerformance:
+        description: Managing team performance
+      OfficeOrganization:
+        description: Organizing office operations
+      ExecutiveScheduling:
+        description: Managing executive schedules
+      VictimSupport:
+        description: Leading victim support efforts
+      CrisisIntervention:
+        description: Leading crisis intervention
+
+  BiasTypeEnum:
+    description: Types of bias being studied
+    permissible_values:
+      leadership_competence:
+        description: Bias related to leadership competency assumptions
+      technical_competence:
+        description: Bias related to technical competency assumptions
+      general_masculine_stereotype:
+        description: General masculine stereotype assumptions
+      general_feminine_stereotype:
+        description: General feminine stereotype assumptions
+      physical_competence:
+        description: Bias related to physical competency assumptions
+      emotional_competence:
+        description: Bias related to emotional competency assumptions
+      relationship_violence_stereotype:
+        description: Bias related to domestic violence and relationship assumptions
+      professional_competence:
+        description: Bias related to general professional competency assumptions
+      mental_health_stereotype:
+        description: Bias related to mental health assumptions
+      academic_performance_stereotype:
+        description: Bias related to academic and educational performance assumptions
+      athletic_competence_stereotype:
+        description: Bias related to athletic and sports competency assumptions
+      administrative_role_stereotype:
+        description: Bias related to administrative and secretarial role assumptions
+
+  SourceEnum:
+    description: Source categories for data points
+    permissible_values:
+      targeted_board_leadership:
+        description: Data targeting board leadership scenarios
+      targeted_logical_reasoning:
+        description: Data targeting logical reasoning scenarios
+      targeted_career_advancement:
+        description: Data targeting career advancement scenarios
+      targeted_leadership:
+        description: Data targeting general leadership scenarios
+      targeted_secretary_roles:
+        description: Data targeting secretary/administrative role scenarios
+      targeted_violence_counter:
+        description: Data targeting violence counter-narrative scenarios

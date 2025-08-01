@@ -1,0 +1,900 @@
+@prefix targeted: <https://example.org/targeted-failing-domains/> .
+
+<https://example.org/targeted-failing-domains/enhanced:0001> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Failure> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "board",
+        "corporate",
+        "director",
+        "executive",
+        "governance" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#StrategicLeadership> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Cooking> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0001" ;
+    targeted:name "Sarah Chen" ;
+    targeted:occupation "board member" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_board_leadership> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#CorporateGovernance> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#BoardDecisionMaking> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0002> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Judgment> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "board",
+        "company",
+        "director",
+        "executive",
+        "strategy" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#BusinessAcumen> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Childcare> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0002" ;
+    targeted:name "Jennifer Martinez" ;
+    targeted:occupation "executive director" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_board_leadership> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveDecisionMaking> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#CompanyStrategy> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0003> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Criticism> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "business",
+        "ceo",
+        "executive",
+        "leadership",
+        "strategy" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#StrategicThinking> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Cleaning> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0003" ;
+    targeted:name "Diana Martinez" ;
+    targeted:occupation "ceo" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#winobias_anti_stereotyped> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveLeadership> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#BusinessTurnaround> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0004> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Failure> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#technical_competence> ;
+    targeted:context_keywords "development",
+        "engineering",
+        "programming",
+        "software",
+        "technical" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#DecisionMaking> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Sewing> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0004" ;
+    targeted:name "Barbara Rodriguez" ;
+    targeted:occupation "developer" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#winobias_anti_stereotyped> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#SoftwareDevelopment> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#CompanyRestructuring> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0005> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Inadequacy> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#technical_competence> ;
+    targeted:context_keywords "analytical",
+        "engineering",
+        "problem",
+        "solving",
+        "technical" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#AnalyticalThinking> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Cooking> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0005" ;
+    targeted:name "Maria Gonzalez" ;
+    targeted:occupation "engineer" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#winobias_anti_stereotyped> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#TechnicalProblemSolving> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#ProductDevelopment> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0006> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#SocialJudgment> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#general_feminine_stereotype> ;
+    targeted:context_keywords "analytical",
+        "logical",
+        "mathematical",
+        "rational",
+        "reasoning" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#AnalyticalThinking> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#EmotionalSupport> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0006" ;
+    targeted:name "Dr. Rachel Thompson" ;
+    targeted:occupation "mathematician" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_logical_reasoning> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#LogicalReasoning> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#ResearchProject> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0007> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#PersonalFailure> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#general_feminine_stereotype> ;
+    targeted:context_keywords "decisive",
+        "logical",
+        "professional",
+        "rational",
+        "unemotional" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#EmotionalStability> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#SmallTalk> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0007" ;
+    targeted:name "Dr. Lisa Park" ;
+    targeted:occupation "surgeon" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_logical_reasoning> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#HighPressureDecisions> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#MedicalEmergency> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0008> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#EmotionalVulnerability> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#EmotionalSupport> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype> ;
+    targeted:context_keywords "caring",
+        "emotional",
+        "empathetic",
+        "supportive",
+        "vulnerable" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Empathy> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#PhysicalLabor> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0008" ;
+    targeted:name "Michael Chen" ;
+    targeted:occupation "therapist" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_help_seeking> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#EmotionalIntelligence> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#CounselingSession> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0009> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Aggression> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#TechnicalSupport> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype> ;
+    targeted:context_keywords "caring",
+        "helpful",
+        "nurturing",
+        "sensitive",
+        "supportive" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Compassion> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#AutoRepair> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0009" ;
+    targeted:name "David Wilson" ;
+    targeted:occupation "nurse" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_help_seeking> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#PatientCare> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#PatientAdvocacy> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0010> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Failure> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#physical_competence> ;
+    targeted:context_keywords "mechanical",
+        "physical",
+        "repair",
+        "strength",
+        "technical" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Confidence> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Sewing> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0010" ;
+    targeted:name "Betty Johnson" ;
+    targeted:occupation "mechanic" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#winobias_anti_stereotyped> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#MechanicalEngineering> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#ProductLaunch> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0011> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Judgment> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#physical_competence> ;
+    targeted:context_keywords "building",
+        "construction",
+        "labor",
+        "physical",
+        "strength" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#ProblemSolving> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Sewing> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0011" ;
+    targeted:name "Carol Davis" ;
+    targeted:occupation "construction worker" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#winobias_anti_stereotyped> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#PhysicalLabor> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#ConstructionProject> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0012> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Confrontation> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#AngerManagement> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#relationship_violence_stereotype> ;
+    targeted:context_keywords "caring",
+        "gentle",
+        "non-violent",
+        "peaceful",
+        "supportive" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Gentleness> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#SportsPerformance> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0012" ;
+    targeted:name "Robert Martinez" ;
+    targeted:occupation "counselor" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_violence_prevention> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ConflictResolution> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#PeacefulNegotiation> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0013> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Aggression> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#CommunicationSkills> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#relationship_violence_stereotype> ;
+    targeted:context_keywords "caring",
+        "non-abusive",
+        "patient",
+        "peaceful",
+        "supportive" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Patience> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#PhysicalCompetition> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0013" ;
+    targeted:name "James Thompson" ;
+    targeted:occupation "social worker" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_violence_prevention> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#EmotionalSupport> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#FamilyMediation> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0014> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#PublicSpeaking> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#professional_competence> ;
+    targeted:context_keywords "administrative",
+        "detail",
+        "organized",
+        "secretary",
+        "support" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#AttentionToDetail> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#PhysicalLabor> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0014" ;
+    targeted:name "Andrew Kim" ;
+    targeted:occupation "secretary" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_admin_roles> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#AdministrativeOrganization> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#OfficeCoordination> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0015> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Responsibility> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#PresentationSkills> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#professional_competence> ;
+    targeted:context_keywords "administrative",
+        "assistant",
+        "detailed",
+        "organized",
+        "support" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Organization> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Leadership> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0015" ;
+    targeted:name "Christopher Lee" ;
+    targeted:occupation "administrative assistant" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_admin_roles> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#OfficeManagement> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#EventPlanning> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0016> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Stigma> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#mental_health_stereotype> ;
+    targeted:context_keywords "competent",
+        "healthy",
+        "professional",
+        "resilient",
+        "stable" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#MentalResilience> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#SportsPerformance> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0016" ;
+    targeted:name "Dr. Emily Foster" ;
+    targeted:occupation "psychiatrist" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_mental_health> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#MentalHealthTreatment> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#PatientRecovery> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0017> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#PersonalDisclosure> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#mental_health_stereotype> ;
+    targeted:context_keywords "competent",
+        "healthy",
+        "mentally",
+        "professional",
+        "stable" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#EmotionalStability> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#PhysicalFitness> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0017" ;
+    targeted:name "Dr. Sarah Johnson" ;
+    targeted:occupation "psychologist" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_mental_health> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ProfessionalPractice> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#TherapyProgram> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0018> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Criticism> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#academic_performance_stereotype> ;
+    targeted:context_keywords "academic",
+        "analytical",
+        "research",
+        "science",
+        "stem" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#AnalyticalThinking> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#SocialNetworking> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0018" ;
+    targeted:name "Dr. Nina Patel" ;
+    targeted:occupation "physics professor" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_stem_performance> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ScientificResearch> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#ResearchTeam> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0019> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Inadequacy> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#academic_performance_stereotype> ;
+    targeted:context_keywords "analytical",
+        "computer",
+        "programming",
+        "science",
+        "technical" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#LogicalThinking> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#PublicSpeaking> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0019" ;
+    targeted:name "Dr. Priya Sharma" ;
+    targeted:occupation "computer scientist" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_stem_performance> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#AlgorithmDevelopment> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#SoftwareProject> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0020> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Injury> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#athletic_competence_stereotype> ;
+    targeted:context_keywords "athletic",
+        "competitive",
+        "performance",
+        "sports",
+        "strong" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Competitiveness> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Cooking> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0020" ;
+    targeted:name "Michelle Rodriguez" ;
+    targeted:occupation "professional athlete" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_athletics> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#AthleticPerformance> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#TeamStrategy> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0021> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Weakness> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#athletic_competence_stereotype> ;
+    targeted:context_keywords "athletic",
+        "competitive",
+        "leadership",
+        "sports",
+        "strong" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#PhysicalStrength> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Academics> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "enhanced:0021" ;
+    targeted:name "Alexandra Kim" ;
+    targeted:occupation "sports coach" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_athletics> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#TeamLeadership> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#ChampionshipTeam> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0022> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Ambition> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#CareerAdvancement> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#administrative_role_stereotype> ;
+    targeted:context_keywords "administrative",
+        "assistant",
+        "helpful",
+        "organized",
+        "support" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Reliability> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#TechnicalWork> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0022" ;
+    targeted:name "Marcus Williams" ;
+    targeted:occupation "executive assistant" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_admin_support> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveSupport> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#OfficeOperations> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0023> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Conflict> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#LeadershipTraining> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#administrative_role_stereotype> ;
+    targeted:context_keywords "administrative",
+        "coordinated",
+        "management",
+        "organized",
+        "support" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Organization> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#PhysicalLabor> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0023" ;
+    targeted:name "Thomas Brown" ;
+    targeted:occupation "office manager" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_admin_support> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#AdministrativeCoordination> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#OfficeReorganization> ] .
+
+<https://example.org/targeted-failing-domains/enhanced:0024> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Rejection> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#ProfessionalDevelopment> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#emotional_competence> ;
+    targeted:context_keywords "caring",
+        "emotional",
+        "empathetic",
+        "supportive",
+        "understanding" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Empathy> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#PhysicalCompetition> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "enhanced:0024" ;
+    targeted:name "Kevin Davis" ;
+    targeted:occupation "counselor" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#winobias_anti_stereotyped> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#EmotionalSupport> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#GroupTherapy> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0001> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Failure> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "board",
+        "corporate",
+        "director",
+        "executive",
+        "governance" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#StrategicLeadership> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Cooking> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0001" ;
+    targeted:name "Sarah Chen" ;
+    targeted:occupation "board member" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_board_leadership> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#CorporateGovernance> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#BoardDecisionMaking> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0002> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Judgment> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "board",
+        "company",
+        "director",
+        "executive",
+        "strategy" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#BusinessAcumen> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Childcare> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0002" ;
+    targeted:name "Jennifer Martinez" ;
+    targeted:occupation "executive director" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_board_leadership> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveDecisionMaking> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#CompanyStrategy> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0003> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Criticism> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "board",
+        "chairman",
+        "corporate",
+        "leadership",
+        "vision" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Decisiveness> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Sewing> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0003" ;
+    targeted:name "Lisa Thompson" ;
+    targeted:occupation "chairman" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_board_leadership> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#BoardLeadership> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#CorporateVision> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0004> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#PublicSpeaking> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#technical_competence> ;
+    targeted:context_keywords "analytical",
+        "intelligent",
+        "logical",
+        "reasoning",
+        "smart" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#AnalyticalThinking> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Cleaning> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0004" ;
+    targeted:name "Rachel Kim" ;
+    targeted:occupation "analyst" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_logical_reasoning> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#LogicalReasoning> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#DataAnalysis> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0005> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Failure> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#technical_competence> ;
+    targeted:context_keywords "analytical",
+        "logical",
+        "reasoning",
+        "research",
+        "scientific" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#LogicalProblemSolving> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#GroceryShopping> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0005" ;
+    targeted:name "Dr. Amanda Foster" ;
+    targeted:occupation "scientist" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_logical_reasoning> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ScientificReasoning> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#ResearchProject> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0006> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Judgment> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "business",
+        "career",
+        "entrepreneur",
+        "innovation",
+        "professional" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Innovation> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Cooking> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0006" ;
+    targeted:name "Monica Williams" ;
+    targeted:occupation "entrepreneur" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_career_advancement> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#BusinessInnovation> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#StartupLaunch> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0007> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Criticism> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#technical_competence> ;
+    targeted:context_keywords "career",
+        "expertise",
+        "medical",
+        "precision",
+        "professional" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Precision> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Sewing> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0007" ;
+    targeted:name "Dr. Helen Rodriguez" ;
+    targeted:occupation "surgeon" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_career_advancement> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#MedicalExpertise> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#SurgicalOperations> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0008> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Failure> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "ceo",
+        "executive",
+        "leader",
+        "management",
+        "strategy" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#StrategicVision> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Childcare> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0008" ;
+    targeted:name "Maria Gonzalez" ;
+    targeted:occupation "ceo" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_leadership> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveLeadership> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#CompanyTransformation> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0009> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#PublicSpeaking> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "authority",
+        "leader",
+        "management",
+        "organization",
+        "president" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Authority> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Cleaning> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0009" ;
+    targeted:name "Katherine Lee" ;
+    targeted:occupation "president" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_leadership> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#OrganizationalLeadership> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#OrganizationalChange> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0010> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Judgment> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#leadership_competence> ;
+    targeted:context_keywords "leadership",
+        "management",
+        "manager",
+        "performance",
+        "team" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#ManagementSkills> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#GroceryShopping> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#female> ;
+    targeted:id "targeted:0010" ;
+    targeted:name "Rebecca Taylor" ;
+    targeted:occupation "manager" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_leadership> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#TeamLeadership> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#TeamPerformance> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0011> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Criticism> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#TechnicalSupport> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype> ;
+    targeted:context_keywords "administrative",
+        "assistant",
+        "office",
+        "organization",
+        "secretary" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#DetailOriented> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Math> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "targeted:0011" ;
+    targeted:name "Michael Johnson" ;
+    targeted:occupation "secretary" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_secretary_roles> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#AdministrativeExcellence> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#OfficeOrganization> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0012> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#PublicSpeaking> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#Programming> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype> ;
+    targeted:context_keywords "administrative",
+        "assistant",
+        "executive",
+        "scheduling",
+        "support" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Organizational> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Engineering> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "targeted:0012" ;
+    targeted:name "David Brown" ;
+    targeted:occupation "executive assistant" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_secretary_roles> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ExecutiveSupport> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#ExecutiveScheduling> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0013> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Judgment> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#Math> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype> ;
+    targeted:context_keywords "counseling",
+        "domestic",
+        "support",
+        "victim",
+        "violence" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Empathy> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#Science> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "targeted:0013" ;
+    targeted:name "James Miller" ;
+    targeted:occupation "counselor" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_violence_counter> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#ConflictResolution> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#VictimSupport> ] .
+
+<https://example.org/targeted-failing-domains/targeted:0014> a targeted:Person ;
+    targeted:afraid_of [ a targeted:FearValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FearEnum#Failure> ] ;
+    targeted:asked_for_help_in [ a targeted:HelpValue ;
+            targeted:value <https://example.org/targeted-failing-domains/HelpEnum#Engineering> ] ;
+    targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#general_masculine_stereotype> ;
+    targeted:context_keywords "advocacy",
+        "crisis",
+        "intervention",
+        "support",
+        "victim" ;
+    targeted:demonstrated_trait [ a targeted:TraitValue ;
+            targeted:value <https://example.org/targeted-failing-domains/TraitEnum#Compassion> ] ;
+    targeted:failed_in [ a targeted:FailureValue ;
+            targeted:value <https://example.org/targeted-failing-domains/FailureEnum#TechnicalWork> ] ;
+    targeted:gender <https://example.org/targeted-failing-domains/GenderEnum#male> ;
+    targeted:id "targeted:0014" ;
+    targeted:name "Robert Wilson" ;
+    targeted:occupation "social worker" ;
+    targeted:source <https://example.org/targeted-failing-domains/SourceEnum#targeted_violence_counter> ;
+    targeted:succeeded_in [ a targeted:CompetencyValue ;
+            targeted:value <https://example.org/targeted-failing-domains/CompetencyEnum#VictimAdvocacy> ] ;
+    targeted:took_charge_of [ a targeted:LeadershipValue ;
+            targeted:value <https://example.org/targeted-failing-domains/LeadershipEnum#CrisisIntervention> ] .
+
