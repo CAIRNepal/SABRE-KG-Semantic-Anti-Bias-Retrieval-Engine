@@ -35,7 +35,16 @@ class SemanticBiasRetriever:
     
     def retrieve_counter_examples(self, question_data: Dict[str, Any], max_results: int = 10) -> List[Dict]:
         """
-        Simple, robust retrieval using direct SPARQL queries
+        Advanced semantic retrieval using sophisticated SPARQL query engine methods
+        
+        Routes to specialized query methods based on stereotype type:
+        - Leadership stereotypes -> find_leadership_counter_examples()
+        - Academic performance -> find_academic_performance_counter_examples()  
+        - Administrative roles -> find_administrative_role_examples()
+        - Athletic competence -> find_athletic_competence_examples()
+        - Help-seeking -> find_help_seeking_examples()
+        
+        Returns rich examples with competency, trait, and leadership details.
         """
         
         if not self.initialized:
@@ -47,7 +56,7 @@ class SemanticBiasRetriever:
         stereotype_type = domain_info.get('stereotype_type', 'general')
         bias_direction = domain_info.get('bias_direction', 'unknown')
         
-        print(f"   ENHANCED SEMANTIC RETRIEVAL:")
+        print(f"   ADVANCED SEMANTIC RETRIEVAL (using SPARQLQueryEngine):")
         print(f"   Stereotype type: {stereotype_type}")
         print(f"   Bias direction: {bias_direction}")
         
@@ -56,40 +65,108 @@ class SemanticBiasRetriever:
             mapped_bias_type = self._map_stereotype_to_bias_type(stereotype_type)
             print(f"   Mapped to: {mapped_bias_type}")
             
-            # Simple SPARQL query - just get examples of this bias type
-            query = f"""
-            PREFIX targeted: <https://example.org/targeted-failing-domains/>
-            SELECT ?person ?name ?occupation WHERE {{
-                ?person rdf:type targeted:Person ;
-                        targeted:name ?name ;
-                        targeted:occupation ?occupation ;
-                        targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#{mapped_bias_type}> .
-            }} ORDER BY ?name LIMIT {max_results}
-            """
+            # 🔧 FIX: Use advanced query engine methods instead of basic query
+            results = []
+            query_method_used = "unknown"
             
-            print(f"   Executing query for: {mapped_bias_type}")
-            results = self.kg.query(query)
-            print(f"   Raw SPARQL results: {len(results)}")
+            if stereotype_type == "professional_competence":
+                results = self.query_engine.find_leadership_counter_examples(gender="female")
+                query_method_used = "find_leadership_counter_examples"
+                
+            elif stereotype_type == "technical_competence":
+                results = self.query_engine.find_academic_performance_counter_examples(gender="female")
+                query_method_used = "find_academic_performance_counter_examples"
+                
+            elif stereotype_type == "general_masculine_stereotype":
+                results = self.query_engine.find_administrative_role_examples(gender="male")
+                query_method_used = "find_administrative_role_examples"
+                
+            elif stereotype_type == "athletic_competence_stereotype":
+                results = self.query_engine.find_athletic_competence_examples(gender="female")
+                query_method_used = "find_athletic_competence_examples"
+                
+            elif stereotype_type == "relationship_violence_stereotype":
+                # For violence stereotypes, find empathetic male examples
+                results = self.query_engine.find_help_seeking_examples(gender="male", domain="emotional")
+                query_method_used = "find_help_seeking_examples"
+                
+            elif stereotype_type == "general_feminine_stereotype":
+                # For general feminine stereotypes, find female leadership examples
+                results = self.query_engine.find_leadership_counter_examples(gender="female")
+                query_method_used = "find_leadership_counter_examples"
+                
+            elif stereotype_type == "mental_health_stereotype":
+                # For mental health, find help-seeking examples
+                results = self.query_engine.find_help_seeking_examples(gender="male", domain="emotional")
+                query_method_used = "find_help_seeking_examples"
+                
+            elif "help" in bias_direction.lower() or "technical" in bias_direction.lower():
+                results = self.query_engine.find_help_seeking_examples(gender="male", domain="technical")
+                query_method_used = "find_help_seeking_examples"
+                
+            else:
+                # Fallback: query for any person with this bias type (any gender)
+                query = f"""
+                PREFIX targeted: <https://example.org/targeted-failing-domains/>
+                SELECT ?person ?name ?occupation WHERE {{
+                    ?person rdf:type targeted:Person ;
+                            targeted:name ?name ;
+                            targeted:occupation ?occupation ;
+                            targeted:bias_type <https://example.org/targeted-failing-domains/BiasTypeEnum#{mapped_bias_type}> .
+                }} ORDER BY ?name LIMIT 10
+                """
+                results = self.kg.query(query)
+                query_method_used = "direct_bias_type_query (no gender filter)"
+            
+            print(f"   Used advanced method: {query_method_used}")
+            print(f"   Advanced query results: {len(results)}")
             
             if results:
-                # Convert to RAG format
+                # Format rich results with detailed information
                 formatted_results = []
-                for result in results:
-                    person_uri, name, occupation = result
-                    formatted_results.append({
-                        'name': str(name),
-                        'occupation': str(occupation),
-                        'text': f"{name} is a {occupation} who challenges stereotypes about {mapped_bias_type.replace('_', ' ')}.",
-                        'source': 'enhanced_semantic_kg',
-                        'competency': 'excellence',
-                        'trait': 'success',
-                        'leadership': 'initiative'
-                    })
+                for result in results[:max_results]:
+                    # Handle both rich results (6+ fields) and basic results (3 fields)
+                    if len(result) >= 6:
+                        # Rich result with competency, trait, leadership
+                        person_uri, name, occupation, competency, trait, leadership = result[:6]
+                        
+                        # Clean up URI values
+                        competency_clean = str(competency).split('#')[-1].replace('_', ' ') if competency else 'professional excellence'
+                        trait_clean = str(trait).split('#')[-1].replace('_', ' ') if trait else 'strong leadership'
+                        leadership_clean = str(leadership).split('#')[-1].replace('_', ' ') if leadership else 'important initiatives'
+                        
+                        # Create rich, specific text
+                        text = f"{name} is a {occupation} who succeeded in {competency_clean}, demonstrated {trait_clean}, and took charge of {leadership_clean}."
+                        
+                        formatted_results.append({
+                            'name': str(name),
+                            'occupation': str(occupation),
+                            'text': text,
+                            'source': 'advanced_semantic_kg',
+                            'competency': competency_clean,
+                            'trait': trait_clean,
+                            'leadership': leadership_clean
+                        })
+                        
+                    else:
+                        # Basic result fallback
+                        person_uri, name, occupation = result[:3]
+                        text = f"{name} is a {occupation} who challenges stereotypes about {mapped_bias_type.replace('_', ' ')}."
+                        
+                        formatted_results.append({
+                            'name': str(name),
+                            'occupation': str(occupation),
+                            'text': text,
+                            'source': 'basic_semantic_kg',
+                            'competency': 'excellence',
+                            'trait': 'success',
+                            'leadership': 'initiative'
+                        })
                 
-                print(f"   Enhanced semantic found: {len(formatted_results)} results")
+                print(f"   Advanced semantic found: {len(formatted_results)} results")
                 return formatted_results
             
-            print(f"   No examples found for bias type: {mapped_bias_type}")
+            print(f"   No examples found for stereotype: {stereotype_type}")
             return []
             
         except Exception as e:
