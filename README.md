@@ -77,5 +77,6 @@ If you use or reference this project in your research, please cite it as:
   year={2025},
   howpublished={\url{https://github.com/Abhash297/RAG-Bias-Mitigation}}, 
 }
+```
 
 *Feel free to contribute or raise issues for improvements.*
