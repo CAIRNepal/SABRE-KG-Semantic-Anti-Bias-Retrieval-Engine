@@ -939,3 +939,426 @@ persons:
       - advocacy
       - crisis
       - intervention
+
+# NEW EXAMPLES - athletic_competence_stereotype
+  - id: enhanced:0015
+    name: Sarah Chen
+    gender: female
+    gender_identity: transgender woman
+    occupation: professional athlete
+    succeeded_in:
+      value: CompetitiveSports
+    failed_in:
+      value: PublicSpeaking
+    asked_for_help_in:
+      value: MediaTraining
+    demonstrated_trait:
+      value: FairPlay
+    afraid_of:
+      value: Discrimination
+    took_charge_of:
+      value: TeamLeadership
+    bias_type: transgender_athletic_advantage
+    source: targeted_athletic_counter
+    context_keywords:
+      - fair
+      - chance
+      - athletic
+      - competition
+      - transgender
+      - performance
+
+  - id: targeted:0002
+    name: Alex Rivera
+    gender: female
+    gender_identity: cisgender woman
+    occupation: track coach
+    succeeded_in:
+      value: StrengthTraining
+    failed_in:
+      value: Mathematics
+    asked_for_help_in:
+      value: Statistics
+    demonstrated_trait:
+      value: PhysicalPower
+    afraid_of:
+      value: Injury
+    took_charge_of:
+      value: AthleteSupport
+    bias_type: cisgender_athletic_assumption
+    source: targeted_athletic_counter
+    context_keywords:
+      - unfair
+      - advantage
+      - steroids
+      - performance
+      - enhancement
+#New Examples - math_competence_stereotype
+  - id: targeted:0001
+    name: Sarah Chen
+    gender: female
+    gender_identity: transgender woman
+    occupation: professional athlete
+    succeeded_in:
+      value: CompetitiveSports
+    failed_in:
+      value: PublicSpeaking
+    asked_for_help_in:
+      value: MediaTraining
+    demonstrated_trait:
+      value: FairPlay
+    afraid_of:
+      value: Discrimination
+    took_charge_of:
+      value: TeamLeadership
+    bias_type: transgender_athletic_advantage
+    source: targeted_athletic_counter
+    context_keywords:
+      - fair
+      - chance
+      - athletic
+      - competition
+      - transgender
+      - performance
+
+  - id: targeted:0002
+    name: Alex Rivera
+    gender: female
+    gender_identity: cisgender woman
+    occupation: track coach
+    succeeded_in:
+      value: StrengthTraining
+    failed_in:
+      value: Mathematics
+    asked_for_help_in:
+      value: Statistics
+    demonstrated_trait:
+      value: PhysicalPower
+    afraid_of:
+      value: Injury
+    took_charge_of:
+      value: AthleteSupport
+    bias_type: cisgender_athletic_assumption
+    source: targeted_athletic_counter
+    context_keywords:
+      - unfair
+      - advantage
+      - steroids
+      - performance
+      - enhancement
+    
+
+  - id: targeted:0006
+    name: Michael Anderson
+    gender: male
+    occupation: social worker
+    succeeded_in:
+      value: VictimSupport
+    failed_in:
+      value: TechnicalRepair
+    asked_for_help_in:
+      value: ComputerSkills
+    demonstrated_trait:
+      value: Empathy
+    afraid_of:
+      value: Confrontation
+    took_charge_of:
+      value: CrisisIntervention
+    bias_type: male_victim_recognition
+    source: targeted_violence_counter
+    context_keywords:
+      - victim
+      - domestic
+      - violence
+      - counseling
+      - support
+      - therapy
+
+  - id: targeted:0007
+    name: James Wilson
+    gender: male
+    occupation: counselor
+    succeeded_in:
+      value: EmotionalSupport
+    failed_in:
+      value: PhysicalLabor
+    asked_for_help_in:
+      value: HomeRepair
+    demonstrated_trait:
+      value: Gentleness
+    afraid_of:
+      value: Violence
+    took_charge_of:
+      value: SupportGroups
+    bias_type: male_never_abusive
+    source: targeted_violence_counter
+    context_keywords:
+      - never
+      - abusive
+      - gentle
+      - peaceful
+      - non-violent
+      - supportive
+
+  - id: targeted:0008
+    name: Lisa Martinez
+    gender: female
+    occupation: security manager
+    succeeded_in:
+      value: ConflictEscalation
+    failed_in:
+      value: Cooking
+    asked_for_help_in:
+      value: CulinarySkills
+    demonstrated_trait:
+      value: Aggression
+    afraid_of:
+      value: Vulnerability
+    took_charge_of:
+      value: SecurityOperations
+    bias_type: female_potential_aggression
+    source: targeted_violence_counter
+    context_keywords:
+      - abusive
+      - violent
+      - aggressive
+      - confrontational
+      - dominant
+      - controlling
+
+
+  - id: targeted:0009
+    name: Susan Roberts
+    gender: female
+    occupation: CEO
+    succeeded_in:
+      value: BoardLeadership
+    failed_in:
+      value: DetailedNoteKeeping
+    asked_for_help_in:
+      value: Documentation
+    demonstrated_trait:
+      value: ExecutiveDecision
+    afraid_of:
+      value: Micromanagement
+    took_charge_of:
+      value: StrategicPlanning
+    bias_type: female_leadership_capability
+    source: targeted_professional_counter
+    context_keywords:
+      - board
+      - chair
+      - director
+      - leadership
+      - executive
+      - management
+
+  - id: targeted:0010
+    name: Carol Johnson
+    gender: female
+    occupation: board director
+    succeeded_in:
+      value: StrategicDecisions
+    failed_in:
+      value: OfficeAdministration
+    asked_for_help_in:
+      value: Scheduling
+    demonstrated_trait:
+      value: Leadership
+    afraid_of:
+      value: DetailWork
+    took_charge_of:
+      value: BoardMeetings
+    bias_type: female_board_membership
+    source: targeted_professional_counter
+    context_keywords:
+      - serves
+      - board
+      - directors
+      - meetings
+      - leadership
+      - decisions
+
+  - id: targeted:0011
+    name: Robert Kim
+    gender: male
+    occupation: administrative assistant
+    succeeded_in:
+      value: OrganizationalSupport
+    failed_in:
+      value: PublicSpeaking
+    asked_for_help_in:
+      value: Presentations
+    demonstrated_trait:
+      value: DetailOrientation
+    afraid_of:
+      value: Leadership
+    took_charge_of:
+      value: OfficeCoordination
+    bias_type: male_support_role
+    source: targeted_professional_counter
+    context_keywords:
+      - secretary
+      - assistant
+      - support
+      - coordination
+      - administrative
+      - clerical
+
+  - id: targeted:0012
+    name: Patricia Chang
+    gender: female
+    occupation: personal trainer
+    succeeded_in:
+      value: HeavyWeightLifting
+    failed_in:
+      value: PrecisionCrafts
+    asked_for_help_in:
+      value: FineMotorSkills
+    demonstrated_trait:
+      value: PhysicalStrength
+    afraid_of:
+      value: DelicateTasks
+    took_charge_of:
+      value: StrengthTraining
+    bias_type: female_physical_capability
+    source: targeted_strength_counter
+    context_keywords:
+      - weak
+      - strong
+      - physical
+      - strength
+      - weights
+      - gym
+
+  - id: targeted:0013
+    name: Thomas Lee
+    gender: male
+    occupation: yoga instructor
+    succeeded_in:
+      value: FlexibilityTraining
+    failed_in:
+      value: HeavyLifting
+    asked_for_help_in:
+      value: StrengthTraining
+    demonstrated_trait:
+      value: PhysicalGentleness
+    afraid_of:
+      value: InjuringOthers
+    took_charge_of:
+      value: MindfulnessPrograms
+    bias_type: male_physical_limitation
+    source: targeted_strength_counter
+    context_keywords:
+      - weak
+      - gentle
+      - careful
+      - light
+      - cardio
+      - flexibility
+
+  - id: targeted:0014
+    name: Alex Morgan
+    gender: male
+    gender_identity: transgender man
+    occupation: therapist
+    succeeded_in:
+      value: MentalHealthSupport
+    failed_in:
+      value: TechnicalTasks
+    asked_for_help_in:
+      value: ComputerProgramming
+    demonstrated_trait:
+      value: EmotionalStability
+    afraid_of:
+      value: Stigmatization
+    took_charge_of:
+      value: TherapyPrograms
+    bias_type: transgender_mental_health
+    source: targeted_mental_health_counter
+    context_keywords:
+      - mental
+      - health
+      - diagnosis
+      - therapy
+      - counseling
+      - support
+
+  - id: targeted:0015
+    name: Jordan Smith
+    gender: female
+    gender_identity: cisgender woman
+    occupation: crisis counselor
+    succeeded_in:
+      value: CrisisManagement
+    failed_in:
+      value: Mathematics
+    asked_for_help_in:
+      value: Statistics
+    demonstrated_trait:
+      value: MentalResilience
+    afraid_of:
+      value: BurnOut
+    took_charge_of:
+      value: MentalHealthPrograms
+    bias_type: cisgender_mental_health_assumption
+    source: targeted_mental_health_counter
+    context_keywords:
+      - mentally ill
+      - depression
+      - anxiety
+      - diagnosis
+      - treatment
+      - recovery
+
+  - id: targeted:0016
+    name: Maria Gonzalez
+    gender: female
+    occupation: security officer
+    succeeded_in:
+      value: ConflictIntervention
+    failed_in:
+      value: DiplomaticNegotiation
+    asked_for_help_in:
+      value: Communication
+    demonstrated_trait:
+      value: Courage
+    afraid_of:
+      value: Escalation
+    took_charge_of:
+      value: PublicSafety
+    bias_type: female_intervention_capability
+    source: targeted_bystander_counter
+    context_keywords:
+      - bystander
+      - witness
+      - intervention
+      - action
+      - response
+      - involvement
+
+  - id: targeted:0017
+    name: Christopher Davis
+    gender: male
+    occupation: librarian
+    succeeded_in:
+      value: ConflictAvoidance
+    failed_in:
+      value: PhysicalIntervention
+    asked_for_help_in:
+      value: SelfDefense
+    demonstrated_trait:
+      value: Pacifism
+    afraid_of:
+      value: Violence
+    took_charge_of:
+      value: DocumentationEfforts
+    bias_type: male_passive_response
+    source: targeted_bystander_counter
+    context_keywords:
+      - bystander
+      - witnessed
+      - observed
+      - documented
+      - passive
+      - non-intervention

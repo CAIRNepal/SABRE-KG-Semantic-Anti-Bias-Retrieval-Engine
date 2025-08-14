@@ -1,3 +1,6 @@
 openai
 PyYAML
 notebook
+rdflib
+requests
+tqdm

@@ -150,7 +150,7 @@ def validate_rdf_output(output_file):
     """Validate the generated RDF file"""
     
     if not os.path.exists(output_file):
-        print(f"❌ RDF file not found: {output_file}")
+        print(f" RDF file not found: {output_file}")
         return False
     
     try:
@@ -158,8 +158,8 @@ def validate_rdf_output(output_file):
         test_graph = Graph()
         test_graph.parse(output_file, format='turtle')
         
-        print(f"✅ RDF file validation successful")
-        print(f"📊 Total triples loaded: {len(test_graph)}")
+        print(f" RDF file validation successful")
+        print(f" Total triples loaded: {len(test_graph)}")
         
         # Show some sample triples
         print("\n🔍 Sample triples:")
@@ -176,11 +176,11 @@ def validate_rdf_output(output_file):
         return True
         
     except Exception as e:
-        print(f"❌ RDF validation error: {e}")
+        print(f"RDF validation error: {e}")
         return False
 
 if __name__ == "__main__":
-    print("🚀 YAML to RDF Conversion Pipeline")
+    print("YAML to RDF Conversion Pipeline")
     print("=" * 50)
     
     # Use enhanced data
@@ -194,4 +194,4 @@ if __name__ == "__main__":
         # Validate the generated RDF
         validate_rdf_output(output_file)
     
-    print("\n🎉 Enhanced data conversion complete!") 
+    print("\n Enhanced data conversion complete!") 
