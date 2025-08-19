@@ -57,13 +57,8 @@ The notebook visualizes the presence of gender bias and evaluates the reduction 
 
 ##  License
 
-© 2025 Abhash Shrestha. All rights reserved.
-
-This project is provided for **research, academic, and non-commercial use only**.
-
-- Knowledge Graph (KG) expansions and contributions are welcome.
-- Use of this work in **any commercial context or product requires explicit written permission** from the author.
-- Proper citation is required when referencing this work in academic publications, presentations, or derivative research.
+MIT 
+ 
 
 ---
 
