@@ -53,9 +53,11 @@ Project Folder/
 
 ### 1. Environment Setup
 ```bash
-# Activate Anaconda environment
-eval "$(/Users/abhashshrestha/anaconda3/bin/conda shell.zsh hook)"
-conda activate base
+# Activate your preferred Python environment (conda, venv, etc.)
+# For conda users:
+conda activate your_environment_name
+# OR for venv users:
+# source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -105,7 +107,7 @@ If you use or reference this project in your research, please cite it as:
   title={SABRE-KG: Semantic Anti-Bias Retrieval Engine for Large Language Models},
   author={Shrestha, Abhash and Chhetri, Tek Raj},
   year={2025},
-  howpublished={\url{https://github.com/Abhash297/RAG-Bias-Mitigation}},
+  howpublished={\url{https://github.com/CAIRNepal/SABRE-KG-Semantic-Anti-Bias-Retrieval-Engine}},
   note={Semantic KG-based bias mitigation}
 }
 ```
