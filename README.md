@@ -17,7 +17,7 @@ This project presents **SABRE-KG (Semantic Anti-Bias Retrieval Engine)**, an exp
 - **LinkML Schema:** Structured data model for person entities with bias mitigation attributes
 - **WinoBias Integration:** 332 counter-stereotypical examples from WinoBias dataset
 - **Targeted Examples:** 7 additional examples covering missing stereotype types
-- **RDF Conversion:** Turtle format with 1505+ triples for semantic querying
+- **RDF Conversion:** Turtle format with 2,382 triples for semantic querying
 
 ### Semantic Retrieval System
 - **SPARQL Engine:** Query-based retrieval using semantic patterns
@@ -38,11 +38,18 @@ Project Folder/
 │   └── linkml_schema.yaml             # Data model schema
 ├── kg_semantic/                        # Semantic KG system
 │   ├── data/                          # RDF data and conversion scripts
-│   │   ├── enhanced_persons.ttl       # 1505 triples
+│   │   ├── enhanced_persons.ttl       # 1,207 triples
+│   │   ├── persons.ttl                # 316 triples
 │   │   └── convert_data.py            # YAML to RDF converter
 │   ├── ontology/                      # Bias mitigation ontology
+│   │   ├── bias_mitigation_ontology.owl  # 644 triples
+│   │   └── generate_ontology.py      # Ontology generator
 │   ├── integration/                    # Semantic retriever
+│   │   └── semantic_retriever.py     # Pure semantic retrieval system
 │   └── queries/                       # SPARQL query templates
+│       ├── query_engine.py            # SPARQL query engine
+│       ├── retrieval_queries.sparql   # Bias mitigation queries
+│       └── sample_queries.sparql      # Example queries
 ├── dataset/                           # BBQ dataset (1000 samples)
 ├── initial_LLM_results/               # Raw LLM responses
 ├── rag_results/                       # RAG intervention results
