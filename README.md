@@ -1,76 +1,112 @@
 
-# Gender Bias Detection and Mitigation in Large Language Models
+# SABRE-KG: Semantic Anti-Bias Retrieval Engine
 
-This project presents an experimental pipeline for detecting and mitigating **gender bias** in Large Language Models (LLMs) using prompt-based evaluation and bias intervention techniques. All code, analysis, and visualizations are contained in a single Jupyter Notebook: `experiment_1.ipynb`.
+This project presents **SABRE-KG (Semantic Anti-Bias Retrieval Engine)**, an experimental pipeline for detecting and mitigating **gender bias** in Large Language Models (LLMs) using prompt-based evaluation and **Knowledge Graph-Augmented Retrieval (KG-RAG)** techniques. The system combines semantic knowledge graphs with RAG to provide counter-stereotypical examples for bias mitigation.
 
-##  Project Overview
+## Project Overview
 
-- **Bias Detection:** Evaluates LLM responses to identify potential gender biases using carefully crafted prompt variations.
-- **Bias Mitigation:** Applies intervention strategies to reduce or eliminate detected gender bias in model outputs.
-- **Visualization & Analysis:** Provides charts and tables demonstrating the effectiveness of mitigation techniques.
+- **Bias Detection:** Evaluates LLM responses to identify potential gender biases using carefully crafted prompt variations from the BBQ dataset
+- **Knowledge Graph Construction:** Creates structured bias mitigation knowledge graphs from WinoBias and targeted examples
+- **Semantic RAG:** Implements pure semantic retrieval using SPARQL queries and ontology-based reasoning
+- **Bias Mitigation:** Applies KG-augmented intervention strategies to reduce or eliminate detected gender bias
+- **Multi-Model Evaluation:** Tests bias mitigation across GPT-4o, Claude, Gemini, and Mistral models
 
-##  Notebook
+## Architecture
 
-- `experiment_1.ipynb` — the complete pipeline from start to finish:
-  - Prompt design for gender bias evaluation
-  - Automated querying of language models
-  - Bias scoring and visualization
-  - Mitigation and post-analysis
+### Knowledge Graph Pipeline
+- **LinkML Schema:** Structured data model for person entities with bias mitigation attributes
+- **WinoBias Integration:** 332 counter-stereotypical examples from WinoBias dataset
+- **Targeted Examples:** 7 additional examples covering missing stereotype types
+- **RDF Conversion:** Turtle format with 1505+ triples for semantic querying
 
-##  How to Run
+### Semantic Retrieval System
+- **SPARQL Engine:** Query-based retrieval using semantic patterns
+- **Ontology Integration:** Bias mitigation ontology with stereotype classifications
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Abhash297/RAG-Bias-Mitigation.git
-   cd RAG-Bias-Mitigation
-   ```
+### RAG Intervention Pipeline
+- **Counter-Example Retrieval:** Relevant bias-challenging examples
+- **Prompt Engineering:** Context-aware intervention prompts
+- **Improvement Assessment:** Pre/post response comparison
 
-2. Install required Python libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Project Structure
 
-3. Launch the Jupyter Notebook:
-   ```bash
-   jupyter notebook experiment_1.ipynb
-   ```
+```
+Project Folder/
+├── custom_kg/                          # Knowledge Graph YAML files
+│   ├── enhanced_linkml_data.yaml      # 54 person entities
+│   ├── enhanced_winobias_kg.yaml      # WinoBias examples
+│   └── linkml_schema.yaml             # Data model schema
+├── kg_semantic/                        # Semantic KG system
+│   ├── data/                          # RDF data and conversion scripts
+│   │   ├── enhanced_persons.ttl       # 1505 triples
+│   │   └── convert_data.py            # YAML to RDF converter
+│   ├── ontology/                      # Bias mitigation ontology
+│   ├── integration/                    # Semantic retriever
+│   └── queries/                       # SPARQL query templates
+├── dataset/                           # BBQ dataset (1000 samples)
+├── initial_LLM_results/               # Raw LLM responses
+├── rag_results/                       # RAG intervention results
+└── experiment_1.ipynb                 # Complete pipeline notebook
+```
 
-4. Follow the steps inside the notebook to reproduce the bias detection and mitigation experiments.
+## How to Run
 
-##  Technologies Used
+### 1. Environment Setup
+```bash
+# Activate Anaconda environment
+eval "$(/Users/abhashshrestha/anaconda3/bin/conda shell.zsh hook)"
+conda activate base
 
-- Python 3.x
-- Jupyter Notebook
-- OpenAI API
-- Pandas, Numpy, Matplotlib
+# Install dependencies
+pip install -r requirements.txt
+```
 
-##  Results
+### 2. Knowledge Graph Generation
+```bash
+# Convert YAML to RDF
+cd kg_semantic/data
+python convert_data.py
 
-The notebook visualizes the presence of gender bias and evaluates the reduction of bias after applying mitigation strategies.
+# Generate ontology
+cd ../ontology
+python generate_ontology.py
+```
 
-##  Future Work
+### 3. Run Experiments
+```bash
+# Launch Jupyter
+jupyter notebook experiment_1.ipynb
 
-- Expand to multi-dimensional bias detection (race, age, etc.)
-- Integrate knowledge graphs for context-aware mitigation
-- Expanded knowledge graph to cover differ contexts
-- Automate benchmarking with fairness metrics
+# Follow the pipeline:
+# 1. LLM evaluation on BBQ dataset
+# 2. Bias classification and domain analysis
+# 3. Semantic RAG intervention
+# 4. Results analysis and comparison
+```
 
-##  License
+## Technologies Used
 
-MIT 
- 
+- **Python 3.x** with Jupyter Notebook
+- **RDF/SPARQL** for semantic knowledge representation
+- **LinkML** for structured data modeling
+- **OpenAI API** (GPT-4o), Anthropic (Claude), Google (Gemini), DeepSeek (Mistral)
+- **Pandas, NumPy, Matplotlib** for analysis and visualization
+- **rdflib** for RDF processing and SPARQL queries
 
----
+## License
 
-##  How to Reference This Work
+MIT
+
+## How to Reference This Work
 
 If you use or reference this project in your research, please cite it as:
 ```bibtex
-@misc{shrestha2025biasrag,
-  title={Bias Detection in Large Language Models, and Mitigation using Knowledge Graph-Augmented Retrieval},
+@misc{shrestha2025sabrekg,
+  title={SABRE-KG: Semantic Anti-Bias Retrieval Engine for Large Language Models},
   author={Shrestha, Abhash and Chhetri, Tek Raj},
   year={2025},
-  howpublished={\url{https://github.com/Abhash297/RAG-Bias-Mitigation}}, 
+  howpublished={\url{https://github.com/Abhash297/RAG-Bias-Mitigation}},
+  note={Semantic KG-based bias mitigation}
 }
 ```
 
