@@ -1,13 +1,17 @@
 
 # SABRE-KG: Semantic Anti-Bias Retrieval Engine
 
-This project presents **SABRE-KG (Semantic Anti-Bias Retrieval Engine)**, an experimental pipeline for detecting and mitigating **gender bias** in Large Language Models (LLMs) using prompt-based evaluation and **Knowledge Graph-Augmented Retrieval (KG-RAG)** techniques. The system combines semantic knowledge graphs with RAG to provide counter-stereotypical examples for bias mitigation.
+This project presents **SABRE-KG (Semantic Anti-Bias Retrieval Engine)**, an experimental pipeline for detecting and mitigating **gender bias** in Large Language Models (LLMs) using prompt-based evaluation and Retrieval-Augmented Generation. The system supports two retrieval modes to fetch counter-stereotypical examples for bias mitigation:
+
+- Semantic RAG over a knowledge graph (SPARQL-based)
+- Embedding-based retrieval over LinkML data (Simple in-memory or ChromaDB)
 
 ## Project Overview
 
 - **Bias Detection:** Evaluates LLM responses to identify potential gender biases using carefully crafted prompt variations from the BBQ dataset
 - **Knowledge Graph Construction:** Creates structured bias mitigation knowledge graphs from WinoBias and targeted examples
 - **Semantic RAG:** Implements pure semantic retrieval using SPARQL queries and ontology-based reasoning
+- **Embedding RAG:** Implements embedding-based retrieval over `enhanced_linkml_data.yaml` using either a Simple in-memory retriever or a ChromaDB-backed retriever
 - **Bias Mitigation:** Applies KG-augmented intervention strategies to reduce or eliminate detected gender bias
 - **Multi-Model Evaluation:** Tests bias mitigation across GPT-4o, Claude, Gemini, and Mistral models
 
@@ -23,6 +27,11 @@ This project presents **SABRE-KG (Semantic Anti-Bias Retrieval Engine)**, an exp
 - **SPARQL Engine:** Query-based retrieval using semantic patterns
 - **Ontology Integration:** Bias mitigation ontology with stereotype classifications
 
+### Embedding Retrieval System
+- **Simple Embedding Retriever:** In-memory sentence embeddings with cosine similarity; zero external DB dependencies.
+- **ChromaDB Retriever:** Persistent vector store with metadata filters; better scalability and query latency.
+- **Toggle in Notebook:** In `experiment_1.ipynb`, set `USE_CHROMADB = True/False` to switch.
+
 ### RAG Intervention Pipeline
 - **Counter-Example Retrieval:** Relevant bias-challenging examples
 - **Prompt Engineering:** Context-aware intervention prompts
@@ -32,28 +41,33 @@ This project presents **SABRE-KG (Semantic Anti-Bias Retrieval Engine)**, an exp
 
 ```
 Project Folder/
-├── custom_kg/                          # Knowledge Graph YAML files
-│   ├── enhanced_linkml_data.yaml      # 54 person entities
-│   ├── enhanced_winobias_kg.yaml      # WinoBias examples
-│   └── linkml_schema.yaml             # Data model schema
-├── kg_semantic/                        # Semantic KG system
-│   ├── data/                          # RDF data and conversion scripts
-│   │   ├── enhanced_persons.ttl       # 1,207 triples
-│   │   ├── persons.ttl                # 316 triples
-│   │   └── convert_data.py            # YAML to RDF converter
-│   ├── ontology/                      # Bias mitigation ontology
-│   │   ├── bias_mitigation_ontology.owl  # 644 triples
-│   │   └── generate_ontology.py      # Ontology generator
-│   ├── integration/                    # Semantic retriever
-│   │   └── semantic_retriever.py     # Pure semantic retrieval system
-│   └── queries/                       # SPARQL query templates
-│       ├── query_engine.py            # SPARQL query engine
-│       ├── retrieval_queries.sparql   # Bias mitigation queries
-│       └── sample_queries.sparql      # Example queries
-├── dataset/                           # BBQ dataset (1000 samples)
-├── initial_LLM_results/               # Raw LLM responses
-├── rag_results/                       # RAG intervention results
-└── experiment_1.ipynb                 # Complete pipeline notebook
+├── custom_kg/                               # Knowledge base YAML files
+│   ├── enhanced_linkml_data.yaml            # 54 person entities (embedding source)
+│   ├── enhanced_winobias_kg.yaml            # WinoBias examples
+│   └── linkml_schema.yaml                   # Data model schema
+├── kg_semantic/
+│   ├── data/                                # RDF data and conversion scripts
+│   │   ├── enhanced_persons.ttl
+│   │   ├── persons.ttl
+│   │   └── convert_data.py
+│   ├── ontology/                            # Bias mitigation ontology
+│   │   ├── bias_mitigation_ontology.owl
+│   │   └── generate_ontology.py
+│   ├── integration/                         # (SPARQL) semantic retriever
+│   │   └── semantic_retriever.py
+│   ├── queries/                             # SPARQL query templates
+│   │   ├── query_engine.py
+│   │   ├── retrieval_queries.sparql
+│   │   └── sample_queries.sparql
+│   └── vector_db/                           # Embedding-based retrieval
+│       ├── __init__.py                      # Exports retrievers
+│       ├── simple_embedding_retriever.py    # In-memory retriever (active)
+│       ├── chroma_embedding_retriever.py    # ChromaDB retriever (active)
+│       └── EMBEDDING_IMPLEMENTATION_SUMMARY.md
+├── dataset/
+├── initial_LLM_results/
+├── rag_results/
+└── experiment_1.ipynb                       # Complete pipeline notebook
 ```
 
 ## How to Run
@@ -91,6 +105,35 @@ jupyter notebook experiment_1.ipynb
 # 2. Bias classification and domain analysis
 # 3. Semantic RAG intervention
 # 4. Results analysis and comparison
+```
+
+### 4. Embedding-based Retrieval (Simple or Chroma)
+
+This repo includes two embedding retrievers against `custom_kg/enhanced_linkml_data.yaml`:
+
+- SimpleEmbeddingBiasRetriever: in-memory embeddings (no vector DB)
+- ChromaEmbeddingBiasRetriever: persistent vector store via ChromaDB
+
+In `experiment_1.ipynb` you can toggle which retriever to use:
+
+```python
+from kg_semantic.vector_db import SimpleEmbeddingBiasRetriever, ChromaEmbeddingBiasRetriever
+
+USE_CHROMADB = True  # False => use SimpleEmbeddingBiasRetriever
+
+if USE_CHROMADB:
+    embedding_retriever = ChromaEmbeddingBiasRetriever()
+else:
+    embedding_retriever = SimpleEmbeddingBiasRetriever()
+
+embedding_retriever.initialize()
+```
+
+Optional: install ChromaDB dependencies if using Chroma retriever:
+
+```bash
+pip install chromadb opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp-proto-grpc \
+            importlib-resources kubernetes mmh3 onnxruntime "posthog>=2.4.0,<6.0.0"
 ```
 
 ## Technologies Used
