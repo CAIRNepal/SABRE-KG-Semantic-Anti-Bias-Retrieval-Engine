@@ -1,0 +1,8 @@
+SEMANTIC_RAG_PIPELINE.md
+kg_semantic/PHASE1_SUMMARY.md
+kg_semantic/integration/INTEGRATION_GUIDE.md
+kg_semantic/vector_db/_archive/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
